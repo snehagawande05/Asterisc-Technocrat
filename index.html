@@ -1,0 +1,1760 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Asterisc Technocrat | Web Design, Mobile Apps &amp; Digital Marketing — Nagpur</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- Hidden SVG defs: gradients shared by every copy of the logo mark used in the hero section -->
+<svg width="0" height="0" style="position:absolute;overflow:hidden" aria-hidden="true" focusable="false">
+  <defs>
+    <linearGradient id="markPurpleGradient" x1="25%" y1="0%" x2="65%" y2="100%">
+      <stop offset="0%" stop-color="#3d0d47"/>
+      <stop offset="40%" stop-color="#8b2fa0"/>
+      <stop offset="100%" stop-color="#e0b8ea"/>
+    </linearGradient>
+    <linearGradient id="markGreyGradient" x1="0%" y1="10%" x2="100%" y2="70%">
+      <stop offset="0%" stop-color="#e6e6e6"/>
+      <stop offset="55%" stop-color="#c2c2c2"/>
+      <stop offset="100%" stop-color="#8f8f8f"/>
+    </linearGradient>
+    <linearGradient id="markShineGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="heroMarkClip" clipPathUnits="userSpaceOnUse">
+      <path d="M185,4 L200,145 L182,320 L163,442 L172,320 L178,145 Z M185,4 L238,150 L302,292 L332,347 L306,292 L244,150 Z"/>
+    </clipPath>
+  </defs>
+</svg>
+
+<!-- NAVBAR -->
+<nav>
+  <div class="nav-brand" onclick="showPage('home')">
+    <div class="brand-mark" onclick="event.stopPropagation(); openLogoPopup();">
+      <!-- Navbar logo image — KEPT VISIBLE -->
+      <img class="nav-logo-img" src="Aterics logo.jpg" alt="Asterisc Technocrat logo" />
+    </div>
+    <div class="brand-text">
+      <span class="brand-name">Asterisc Technocrat</span>
+      <span class="brand-tagline">ISO 9001:2015 Certified</span>
+    </div>
+  </div>
+
+  <div class="nav-center">
+
+    <div class="nav-item" id="ni-do">
+  <button class="nav-link" onclick="toggleNav('ni-do')">
+    What We Do
+    <svg class="chevron" viewBox="0 0 11 7"><path d="M1 1L5.5 6L10 1"/></svg>
+  </button>
+  <div class="mega-dropdown wwd-dropdown">
+    <div class="wwd-col">
+      <div class="dropdown-label">Services</div>
+      <span class="wwd-link">Website Design <svg class="wwd-arrow" viewBox="0 0 11 7"><path d="M1 3.5h9M6.5 1L9.5 3.5L6.5 6"/></svg></span>
+      <span class="wwd-link">Mobile Application <svg class="wwd-arrow" viewBox="0 0 11 7"><path d="M1 3.5h9M6.5 1L9.5 3.5L6.5 6"/></svg></span>
+      <span class="wwd-link">E-Commerce <svg class="wwd-arrow" viewBox="0 0 11 7"><path d="M1 3.5h9M6.5 1L9.5 3.5L6.5 6"/></svg></span>
+      <span class="wwd-link">Software Development <svg class="wwd-arrow" viewBox="0 0 11 7"><path d="M1 3.5h9M6.5 1L9.5 3.5L6.5 6"/></svg></span>
+    </div>
+    <div class="wwd-col">
+      <div class="dropdown-label">Solutions</div>
+      <span class="wwd-link">Digital Marketing <svg class="wwd-arrow" viewBox="0 0 11 7"><path d="M1 3.5h9M6.5 1L9.5 3.5L6.5 6"/></svg></span>
+      <span class="wwd-link">Graphic Design <svg class="wwd-arrow" viewBox="0 0 11 7"><path d="M1 3.5h9M6.5 1L9.5 3.5L6.5 6"/></svg></span>
+      <span class="wwd-link">Branding &amp; Identity <svg class="wwd-arrow" viewBox="0 0 11 7"><path d="M1 3.5h9M6.5 1L9.5 3.5L6.5 6"/></svg></span>
+      <span class="wwd-link">Cloud &amp; Hosting <svg class="wwd-arrow" viewBox="0 0 11 7"><path d="M1 3.5h9M6.5 1L9.5 3.5L6.5 6"/></svg></span>
+    </div>
+  </div>
+</div>
+
+    <div class="nav-item" id="ni-think">
+      <button class="nav-link" onclick="showPage('what-we-think'); closeNavs()">What We Think</button>
+    </div>
+
+    <div class="nav-item" id="ni-about">
+  <button class="nav-link" onclick="toggleNav('ni-about')">
+    About Asterics
+    <svg class="chevron" viewBox="0 0 11 7"><path d="M1 1L5.5 6L10 1"/></svg>
+  </button>
+  <div class="mega-dropdown wwd-dropdown wwd-dropdown-3col">
+    <div class="wwd-col">
+      <div class="dropdown-label">What Sets Us Apart</div>
+      <span class="wwd-fact">A Decade of Reliable Delivery</span>
+      <span class="wwd-fact">Internationally Certified Quality</span>
+      <span class="wwd-fact">Skilled, Dedicated Team</span>
+      <span class="wwd-fact">Rooted in Nagpur, Trusted Beyond</span>
+    </div>
+    <div class="wwd-col">
+      <div class="dropdown-label">What We've Achieved</div>
+      <span class="wwd-fact">100+ Successful Launches</span>
+      <span class="wwd-fact">2000+ Careers Kickstarted</span>
+      <span class="wwd-fact">70+ Businesses Grown With Us</span>
+      <span class="wwd-fact">Presence Across NZ &amp; India</span>
+    </div>
+    <div class="wwd-highlight">
+      <div class="wwd-highlight-eyebrow">Recognition</div>
+      <h4>Central India's Top-Rated Tech Firm</h4>
+      <p>Consistently rated highest on Google Reviews across the region — a reputation built one project at a time, not overnight.</p>
+    </div>
+  </div>
+</div>
+
+    <div class="nav-item" id="ni-career">
+      <button class="nav-link" onclick="toggleNav('ni-career')">
+        Careers
+        <svg class="chevron" viewBox="0 0 11 7"><path d="M1 1L5.5 6L10 1"/></svg>
+      </button>
+      <div class="dropdown">
+        <a onclick="showPage('career')">Career Opportunities</a>
+        <a onclick="showPage('internship')">Internships</a>
+      </div>
+    </div>
+
+    <div class="nav-item" id="ni-contact">
+      <button class="nav-link" onclick="showPage('contact'); closeNavs()">Contact Us</button>
+    </div>
+
+  </div>
+
+   <div class="nav-auth">
+    <button class="btn-auth" onclick="openModal('login')">
+      <span class="btn-slide-mask"><span class="btn-slide-stack">
+        <span class="btn-slide-line">Login / Sign Up</span>
+        <span class="btn-slide-line">Login / Sign Up</span>
+      
+       </span></span>
+    </button>
+  </div>
+
+  <button class="hamburger-btn" id="hamburger-btn" onclick="toggleMobileMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu-overlay" id="mobile-menu-overlay" onclick="closeMobileMenuOutside(event)">
+  <div class="mobile-menu-panel">
+    <button class="mobile-menu-close" onclick="closeMobileMenu()">✕</button>
+    <a onclick="showPage('what-we-do'); closeMobileMenu();">What We Do</a>
+    <a onclick="showPage('what-we-think'); closeMobileMenu();">What We Think</a>
+    <a onclick="showPage('about'); closeMobileMenu();">About Asterics</a>
+    <a onclick="showPage('career'); closeMobileMenu();">Careers</a>
+    <a onclick="showPage('internship'); closeMobileMenu();">Internships</a>
+    <a onclick="showPage('contact'); closeMobileMenu();">Contact Us</a>
+    <div class="mobile-menu-auth">
+      <button class="btn-auth" onclick="openModal('login'); closeMobileMenu();">Login / Sign Up</button>
+    </div>
+  </div>
+</div>
+
+<!-- HOME PAGE -->
+ <div id="page-home" class="page active">
+  <div class="hero-wrapper">
+   <div class="hero-bg">
+  <video autoplay muted loop playsinline preload="auto" fetchpriority="high" poster="AT bg img.jpg">
+    <source src="hero-bg-compressed.mp4" type="video/mp4">
+  </video>
+  <div class="hero-bg-overlay"></div>
+</div>
+
+    <div class="hero-content">
+      <h1 class="hero-heading" aria-live="polite"><span class="hero-heading-text" id="hero-heading-text">Asterics Technocrat</span></h1>
+
+      <div class="hero-reveal-group" id="hero-reveal-group">
+
+        <div class="hero-mic-wrap" id="hero-mic-wrap">
+          <button class="hero-mic-btn" id="hero-mic-btn" onclick="toggleHeroMic()" aria-label="Ask with your voice">
+            <svg viewBox="0 0 24 24" class="mic-icon"><path d="M12 15a3 3 0 0 0 3-3V6a3 3 0 0 0-6 0v6a3 3 0 0 0 3 3Z" fill="currentColor"/><path d="M19 11a7 7 0 0 1-14 0" stroke-width="1.8" stroke-linecap="round" fill="none"/><path d="M12 18v3" stroke-width="1.8" stroke-linecap="round"/></svg>
+          </button>
+        </div>
+
+        <div class="hero-search-card">
+          <div class="hero-search-box">
+            <span class="hero-search-sparkle">✦</span>
+            <input type="text" id="hero-ask-input" class="hero-search-input" placeholder="Ask me anything" onkeydown="if(event.key==='Enter'){handleHeroAsk();}" />
+          </div>
+
+          <div class="hero-chips">
+            <button class="hero-chip" onclick="showPage('what-we-do')">Explore our services</button>
+            <button class="hero-chip" onclick="showPage('what-we-do')">Discover Digital Marketing</button>
+            <button class="hero-chip" onclick="showPage('about')">Why choose Asterisc</button>
+          </div>
+
+          <div class="hero-search-footer">
+            <span class="hero-ai-note">Content is generated with AI assistance</span>
+            <div class="hero-footer-actions">
+              <span class="hero-shield" aria-hidden="true">
+                <svg viewBox="0 0 20 20"><path d="M10 2 L17 5 V9.5C17 13.5 14 16.7 10 18C6 16.7 3 13.5 3 9.5V5Z" stroke-width="1.4" fill="none"/><path d="M7 10l2 2 4-4" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+              <button class="hero-arrow-btn" onclick="handleHeroAsk()" aria-label="Submit">
+                <svg viewBox="0 0 20 20"><path d="M4 10h12M12 5l5 5-5 5" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-stats hero-stats-light">
+          <div class="stat"><div class="stat-num" data-count="70">0+</div><div class="stat-label">Happy clients</div></div>
+          <div class="stat-divider"></div>
+          <div class="stat"><div class="stat-num" data-count="100">0+</div><div class="stat-label">Projects complete</div></div>
+          <div class="stat-divider"></div>
+          <div class="stat"><div class="stat-num" data-count="2156">0+</div><div class="stat-label">Interns trained</div></div>
+          <div class="stat-divider"></div>
+          <div class="stat"><div class="stat-num" data-count="22">0+</div><div class="stat-label">Team members</div></div>
+          </div>
+
+      </div>
+    </div>
+  </div>
+
+   <div class="about-story-section">
+    <div class="about-story-media">
+      <div class="about-story-dots" aria-hidden="true"></div>
+      <img src="first .jpg" alt="Our Story" />
+      <div class="about-story-badge">
+        <span class="asb-num">10</span>
+        <span class="asb-label">Years of<br>Experience</span>
+      </div>
+    </div>
+    <div class="about-story-body">
+      <div class="page-eyebrow">About Us</div>
+      <h2 class="section-heading-main">Our Story</h2>
+      <p class="page-sub">
+        We are a superb custom software development company in Nagpur delivering impressive business IT solutions and related services to customers across the world. Our development services are led by a dedicated and passionate team providing the best industry executions combined with the latest technology expertise and business domain knowledge to drive digital transformation.
+      </p>
+      <button class="job-btn" onclick="showPage('about')">Discover More →</button>
+    </div>
+  </div>
+
+  <!-- TRUSTED BY -->
+  <div class="gallery-section trusted-strip">
+    <div class="page-eyebrow">Trusted By</div>
+    <h2 class="section-heading-main">Clients who've grown with us</h2>
+    <div class="trusted-marquee">
+      <div class="trusted-track">
+        <span class="trusted-logo">freshhomes.co.nz</span>
+        <span class="trusted-logo">ppsgroup.co.nz</span>
+        <span class="trusted-logo">heatfinder.co.nz</span>
+        <span class="trusted-logo">freshhomes.co.nz</span>
+        <span class="trusted-logo">ppsgroup.co.nz</span>
+        <span class="trusted-logo">heatfinder.co.nz</span>
+        <span class="trusted-logo">freshhomes.co.nz</span>
+        <span class="trusted-logo">ppsgroup.co.nz</span>
+        <span class="trusted-logo">heatfinder.co.nz</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- CERTIFICATIONS / AWARDS STRIP -->
+  <div class="gallery-section cert-strip">
+    <div class="cert-row">
+      <div class="cert-badge">
+        <div class="cert-badge-icon"><svg viewBox="0 0 20 20"><path d="M10 2 L17 5 V9.5C17 13.5 14 16.7 10 18C6 16.7 3 13.5 3 9.5V5Z" stroke-width="1.4" fill="none"/><path d="M7 10l2 2 4-4" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <div class="cert-badge-text"><strong>ISO 9001:2015</strong><span>Certified Company</span></div>
+      </div>
+      <div class="cert-badge">
+        <div class="cert-badge-icon"><svg viewBox="0 0 20 20"><path d="M10 1.5l2.5 5.6 6.1.6-4.6 4.1 1.4 6-5.4-3.2-5.4 3.2 1.4-6-4.6-4.1 6.1-.6z" stroke-width="1.2" fill="none" stroke-linejoin="round"/></svg></div>
+        <div class="cert-badge-text"><strong>Highest Rated</strong><span>On Google Reviews, Central India</span></div>
+      </div>
+      <div class="cert-badge">
+        <div class="cert-badge-icon"><svg viewBox="0 0 20 20"><circle cx="10" cy="10" r="8" stroke-width="1.4" fill="none"/><path d="M2 10h16M10 2c2.5 2.5 2.5 13.5 0 16M10 2c-2.5 2.5-2.5 13.5 0 16" stroke-width="1.2" fill="none"/></svg></div>
+        <div class="cert-badge-text"><strong>Global Clients</strong><span>New Zealand, India &amp; Beyond</span></div>
+      </div>
+      <div class="cert-badge">
+        <div class="cert-badge-icon"><svg viewBox="0 0 20 20"><circle cx="7" cy="7" r="3" stroke-width="1.3" fill="none"/><circle cx="14" cy="8" r="2.4" stroke-width="1.3" fill="none"/><path d="M2 17c0-2.8 2.2-5 5-5s5 2.2 5 5M12 17c0-2-1.3-3.7-3-4.4" stroke-width="1.3" fill="none" stroke-linecap="round"/></svg></div>
+        <div class="cert-badge-text"><strong>2000+ Interns</strong><span>Trained &amp; Mentored</span></div>
+      </div>
+    </div>
+  </div>
+
+   <div class="techstack-section">
+  <div class="techstack-inner">
+    <div class="page-eyebrow techstack-eyebrow">Our Stack</div>
+    <h2 class="techstack-heading">Technologies we build with</h2>
+    <p class="techstack-sub">Modern, proven tools that power fast, scalable products for every client we work with.</p>
+  </div>
+  <div class="techstack-marquee">
+    <div class="techstack-track">
+      <span class="tech-chip">React</span>
+      <span class="tech-chip">Node.js</span>
+      <span class="tech-chip">MySQL</span>
+      <span class="tech-chip">Flutter</span>
+      <span class="tech-chip">Java</span>
+      <span class="tech-chip">Kotlin</span>
+      <span class="tech-chip">AWS</span>
+      <span class="tech-chip">MongoDB</span>
+      <span class="tech-chip">Express</span>
+      <span class="tech-chip">Figma</span>
+      <!-- repeat once for seamless loop -->
+      <span class="tech-chip">React</span>
+      <span class="tech-chip">Node.js</span>
+      <span class="tech-chip">MySQL</span>
+      <span class="tech-chip">Flutter</span>
+      <span class="tech-chip">Java</span>
+      <span class="tech-chip">Kotlin</span>
+      <span class="tech-chip">AWS</span>
+      <span class="tech-chip">MongoDB</span>
+      <span class="tech-chip">Express</span>
+      <span class="tech-chip">Figma</span>
+    </div>
+  </div>
+</div>
+   
+  
+
+  <!-- CASE STUDY SPOTLIGHT -->
+  <div class="gallery-section case-study-section">
+    <div class="case-study-card">
+      <div class="case-study-media">
+        <img src="secound.jpg" alt="Featured project" />
+      </div>
+      <div class="case-study-body">
+        <div class="page-eyebrow">Case Study</div>
+        <h2 class="section-heading-main">Project One — Web Design</h2>
+        <div class="case-study-steps">
+          <div class="cs-step">
+            <span class="cs-step-label">Challenge</span>
+            <p>The client needed a faster, more modern site that reflected their brand and converted more visitors into leads.</p>
+          </div>
+          <div class="cs-step">
+            <span class="cs-step-label">Solution</span>
+            <p>We designed and built a responsive, performance-focused website with a clear content structure and a refreshed visual identity.</p>
+          </div>
+          <div class="cs-step">
+            <span class="cs-step-label">Result</span>
+            <p>Improved load times, a cleaner user journey, and a noticeable increase in enquiry form submissions post-launch.</p>
+          </div>
+        </div>
+        <button class="job-btn" onclick="showPage('about')">See more work →</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA BANNER -->
+  <div class="cta-banner">
+    <div class="cta-banner-inner">
+      <h2>Have a project in mind?</h2>
+      <p>Let's build something great together — from concept to launch.</p>
+      <button class="cta-banner-btn" onclick="showPage('contact')">Let's Talk →</button>
+    </div>
+  </div>
+
+  <div class="gallery-section home-why why-section-home">
+    <div class="page-eyebrow">Why Asterics</div>
+    <h2 class="section-heading-main">What makes us different</h2>
+    <p class="page-sub">A few reasons clients keep coming back to us for their next project.</p>
+    <div class="why-grid home-why-grid">
+      <div class="why-card">
+        <h4>Award Winning</h4>
+        <p>Industry recognition that boosts reputation and attracts customers and talent.</p>
+      </div>
+      <div class="why-card">
+        <h4>Professional Staff</h4>
+        <p>Our experts grow your business with professional assistance across every domain.</p>
+      </div>
+      <div class="why-card">
+        <h4>24/7 Support</h4>
+        <p>Our support and marketing strategies are available round the clock for your business.</p>
+      </div>
+      <div class="why-card">
+        <h4>Fair Prices</h4>
+        <p>Best-in-industry quality at prices designed to make great tech accessible.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="gallery-section home-process process-section-home">
+    <div class="page-eyebrow">How We Work</div>
+    <h2 class="section-heading-main">Our process, start to finish</h2>
+    <p class="page-sub">A simple, transparent process that keeps you in the loop at every stage.</p>
+    <div class="process-grid">
+      <div class="process-card">
+        <div class="process-num">01</div>
+        <h4>Discover</h4>
+        <p>We learn about your business, goals and audience before writing a single line of code.</p>
+      </div>
+      <div class="process-card">
+        <div class="process-num">02</div>
+        <h4>Design</h4>
+        <p>Wireframes and visual designs are shaped around what your users actually need.</p>
+      </div>
+      <div class="process-card">
+        <div class="process-num">03</div>
+        <h4>Develop</h4>
+        <p>Our engineers build it clean, tested, and ready to scale as you grow.</p>
+      </div>
+      <div class="process-card">
+        <div class="process-num">04</div>
+        <h4>Deliver</h4>
+        <p>We launch, monitor, and stay on hand with ongoing support after go-live.</p>
+      </div>
+    </div>
+  </div>
+
+      <footer class="site-footer">
+  <div class="footer-container">
+
+    <div class="footer-map-card">
+      <div class="footer-map-visual">
+        <iframe
+          src="https://maps.google.com/maps?q=151+Friends+Colony+Katol+Road+Nagpur&output=embed"
+          width="100%" height="100%" style="border:0;" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Asterisc Technocart Office Location">
+        </iframe>
+      </div>
+      <div class="footer-map-info">
+        <div class="footer-map-title">Visit our office</div>
+        <p>151, Friends Colony, Katol Road,<br>Nagpur - 440 013, Maharashtra</p>
+        <a class="footer-map-link" href="https://www.google.com/maps/search/?api=1&query=151+Friends+Colony+Katol+Road+Nagpur" target="_blank" rel="noopener">Get Directions →</a>
+      </div>
+    </div>
+
+    <div class="footer-sitemap">
+      <div class="footer-col footer-col-brand">
+        <div class="footer-brand-row">
+          <div class="footer-brand-mark">
+            <img src="Aterics logo.jpg" alt="Asterisc Technocrat logo" />
+          </div>
+          <span class="footer-brand-name">Asterics Technocart</span>
+        </div>
+        <p>ISO 9001:2015 certified web design, mobile app, and digital marketing company delivering business IT solutions across the world.</p>
+        <div class="footer-social">
+          <a onclick="return false;" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><rect x="3" y="9" width="4" height="12"/><circle cx="5" cy="4" r="2"/><path d="M11 21v-7a3 3 0 0 1 6 0v7M11 21v-6"/></svg></a>
+          <a onclick="return false;" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+          <a onclick="return false;" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M15 4h-2a4 4 0 0 0-4 4v3H7v4h2v7h4v-7h3l1-4h-4V8a1 1 0 0 1 1-1h3z"/></svg></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <div class="footer-col-title">Services</div>
+        <div class="footer-links">
+          <a onclick="showPage('what-we-do')">Website Design</a>
+          <a onclick="showPage('what-we-do')">Mobile Application</a>
+          <a onclick="showPage('what-we-do')">E-Commerce</a>
+          <a onclick="showPage('what-we-do')">Digital Marketing</a>
+          <a onclick="showPage('what-we-do')">Graphic Design</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <div class="footer-col-title">Company</div>
+        <div class="footer-links">
+          <a onclick="showPage('about')">About Us</a>
+          <a onclick="showPage('what-we-think')">What We Think</a>
+          <a onclick="showPage('career')">Careers</a>
+          <a onclick="showPage('internship')">Internships</a>
+          <a onclick="showPage('contact')">Contact Us</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <div class="footer-col-title">Get in Touch</div>
+        <div class="footer-contact-row">
+          <svg viewBox="0 0 15 15"><rect x="1" y="3" width="13" height="9" rx="1.5" stroke-width="1.2"/><path d="M1 4.5L7.5 9L14 4.5" stroke-width="1.2"/></svg>
+          hello@asterisc.in
+        </div>
+        <div class="footer-contact-row">
+          <svg viewBox="0 0 15 15"><path d="M2 2.5C2 2.5 3.5 2 4.5 4.5C5.5 7 5 8 5 8C5 8 6.5 10.5 9 11.5C9 11.5 10 11 11.5 10C13 9 13.5 11 13.5 11L12.5 13C12.5 13 5 13.5 2 5.5L2 2.5Z" stroke-width="1.2" stroke-linejoin="round"/></svg>
+          +91-7744822228
+        </div>
+        <div class="footer-cert-mini">
+          <svg viewBox="0 0 20 20"><path d="M10 2 L17 5 V9.5C17 13.5 14 16.7 10 18C6 16.7 3 13.5 3 9.5V5Z" stroke-width="1.4" fill="none"/><path d="M7 10l2 2 4-4" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          ISO 9001:2015 Certified
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="footer-bottom-text">© 2026 Asterisc Technocrat Pvt. Ltd. All rights reserved.</div>
+      <div class="footer-bottom-links">
+        <a onclick="return false;">Privacy Policy</a>
+        <a onclick="return false;">Terms of Service</a>
+      </div>
+    </div>
+
+  </div>
+</footer>
+</div>
+
+<!-- WHAT WE DO -->
+<div id="page-what-we-do" class="page">
+  <div class="inner-page">
+    <div class="page-container">
+      <div class="page-eyebrow">What We Do</div>
+      <h2 class="page-title">Complete digital services &amp; software solutions</h2>
+      <p class="page-sub">We deliver end-to-end e-commerce digital services and software solutions with product management and online payment gateway integration.</p>
+      <div class="accordion">
+
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false" onclick="toggleAcc(this)">
+            <div class="acc-left"><span class="acc-num">01</span><span class="acc-title">Website Design</span></div>
+            <div class="acc-icon"><svg viewBox="0 0 12 12"><line x1="6" y1="1" x2="6" y2="11" stroke-width="1.6" stroke-linecap="round"/><line x1="1" y1="6" x2="11" y2="6" stroke-width="1.6" stroke-linecap="round"/></svg></div>
+          </button>
+          <div class="accordion-body"><div class="accordion-content">
+            Our global team creates digital experiences — developing websites with low-cost, best quality and advanced technology integration. We build responsive, cross-browser compatible websites tailored to your business needs.
+            <ul>
+              <li>Custom website design &amp; development</li>
+              <li>HTML5, CSS3 &amp; modern frameworks</li>
+              <li>Responsive &amp; mobile-first layouts</li>
+              <li>Web maintenance &amp; support</li>
+            </ul>
+          </div></div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false" onclick="toggleAcc(this)">
+            <div class="acc-left"><span class="acc-num">02</span><span class="acc-title">Mobile Application</span></div>
+            <div class="acc-icon"><svg viewBox="0 0 12 12"><line x1="6" y1="1" x2="6" y2="11" stroke-width="1.6" stroke-linecap="round"/><line x1="1" y1="6" x2="11" y2="6" stroke-width="1.6" stroke-linecap="round"/></svg></div>
+          </button>
+          <div class="accordion-body"><div class="accordion-content">
+            Our Android team develops user-friendly applications with high-quality process, creative &amp; imaginative designers, in-depth business understanding, and robust data security.
+            <ul>
+              <li>Android &amp; iOS application development</li>
+              <li>Flutter cross-platform apps</li>
+              <li>Java &amp; Kotlin development</li>
+              <li>App security &amp; data protection</li>
+            </ul>
+          </div></div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false" onclick="toggleAcc(this)">
+            <div class="acc-left"><span class="acc-num">03</span><span class="acc-title">E-Commerce</span></div>
+            <div class="acc-icon"><svg viewBox="0 0 12 12"><line x1="6" y1="1" x2="6" y2="11" stroke-width="1.6" stroke-linecap="round"/><line x1="1" y1="6" x2="11" y2="6" stroke-width="1.6" stroke-linecap="round"/></svg></div>
+          </button>
+          <div class="accordion-body"><div class="accordion-content">
+            Our e-commerce websites deliver quick page load times and an easy checkout process, with intuitive design, product updates, event information, special offers and the latest features.
+            <ul>
+              <li>E-commerce website development</li>
+              <li>Online payment gateway integration</li>
+              <li>Product management systems</li>
+              <li>Inventory &amp; order management</li>
+            </ul>
+          </div></div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false" onclick="toggleAcc(this)">
+            <div class="acc-left"><span class="acc-num">04</span><span class="acc-title">Digital Marketing</span></div>
+            <div class="acc-icon"><svg viewBox="0 0 12 12"><line x1="6" y1="1" x2="6" y2="11" stroke-width="1.6" stroke-linecap="round"/><line x1="1" y1="6" x2="11" y2="6" stroke-width="1.6" stroke-linecap="round"/></svg></div>
+          </button>
+          <div class="accordion-body"><div class="accordion-content">
+            Our digital marketing team regularly undergoes training as the digital world continuously changes. Our experts ensure brands reach the targeted audience at the right time.
+            <ul>
+              <li>SEO services &amp; support</li>
+              <li>Social media marketing</li>
+              <li>Media ads &amp; campaigns</li>
+              <li>Branding &amp; online presence</li>
+            </ul>
+          </div></div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false" onclick="toggleAcc(this)">
+            <div class="acc-left"><span class="acc-num">05</span><span class="acc-title">Graphic Design</span></div>
+            <div class="acc-icon"><svg viewBox="0 0 12 12"><line x1="6" y1="1" x2="6" y2="11" stroke-width="1.6" stroke-linecap="round"/><line x1="1" y1="6" x2="11" y2="6" stroke-width="1.6" stroke-linecap="round"/></svg></div>
+          </button>
+          <div class="accordion-body"><div class="accordion-content">
+            Our team makes products and brands stand out from competitors. We offer logo design, graphic design, brochure design, packaging, exhibition &amp; event design, and social media creatives.
+            <ul>
+              <li>Logo &amp; brand identity design</li>
+              <li>Brochure &amp; packaging design</li>
+              <li>Social media creatives</li>
+              <li>Exhibition &amp; event design</li>
+            </ul>
+          </div></div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false" onclick="toggleAcc(this)">
+            <div class="acc-left"><span class="acc-num">06</span><span class="acc-title">Software Development</span></div>
+            <div class="acc-icon"><svg viewBox="0 0 12 12"><line x1="6" y1="1" x2="6" y2="11" stroke-width="1.6" stroke-linecap="round"/><line x1="1" y1="6" x2="11" y2="6" stroke-width="1.6" stroke-linecap="round"/></svg></div>
+          </button>
+          <div class="accordion-body"><div class="accordion-content">
+            We build scalable, robust software products tailored to your business needs — from MVPs to full enterprise platforms, with clean architecture and long-term maintainability in mind.
+            <ul>
+              <li>Custom software product development</li>
+              <li>API design &amp; integration</li>
+              <li>Cloud-based SaaS applications</li>
+              <li>Legacy system modernisation</li>
+            </ul>
+          </div></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- WHAT WE THINK -->
+<div id="page-what-we-think" class="page">
+
+  <!-- BANNER -->
+  <div class="think-banner">
+    <div class="think-banner-bg">
+      <img src="what we think.jpg" alt="Team at Asterics Technocrat" />
+    </div>
+    <div class="think-banner-overlay"></div>
+    <div class="think-banner-content">
+      <div class="page-eyebrow think-banner-eyebrow">What We Think</div>
+      <h2 class="think-banner-title">Ideas worth stealing.</h2>
+      <p class="think-banner-sub">Insights, opinions, and thinking from the people building at Asterisc Technocrat.</p>
+      <div class="think-banner-stats">
+        <div><strong>50+</strong><span>Articles</span></div>
+        <div><strong>6</strong><span>Categories</span></div>
+        <div><strong>10K+</strong><span>Reads</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FLOATING FILTER PILLS -->
+  <div class="think-filters-wrap">
+    <div class="think-filters">
+      <button class="think-filter active" onclick="filterThink('all', this)">All</button>
+      <button class="think-filter" onclick="filterThink('Engineering', this)">Engineering</button>
+      <button class="think-filter" onclick="filterThink('AI &amp; Data', this)">AI &amp; Data</button>
+      <button class="think-filter" onclick="filterThink('Strategy', this)">Strategy</button>
+      <button class="think-filter" onclick="filterThink('Digital Marketing', this)">Digital Marketing</button>
+      <button class="think-filter" onclick="filterThink('Mobile', this)">Mobile</button>
+      <button class="think-filter" onclick="filterThink('E-Commerce', this)">E-Commerce</button>
+      <button class="think-filter" onclick="filterThink('Career', this)">Career</button>
+    </div>
+  </div>
+
+  <div class="inner-page inner-page-no-top">
+    <div class="page-container wide">
+       <!-- FEATURED -->
+      <div class="think-section-label">Featured</div>
+      <div class="think-featured" data-category="Strategy" onclick="return false;">
+        <div class="think-featured-media">
+          <img src="13.jpg" alt="Client brief se live website tak" />
+        </div>
+        <div class="think-featured-body">
+          <div class="think-tag-pill">Strategy</div>
+          <h3>From client brief to live website — 5 steps</h3>
+          <p>How we take a raw idea all the way to a fully deployed product — our real process.</p>
+          <span class="think-read-link">Read article
+            <svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+        </div>
+      </div>
+
+      <!-- MORE IDEAS — BOLD COLOR GRID -->
+      <div class="think-section-label think-section-label-spaced">More ideas</div>
+      <div class="think-bento">
+
+        <div class="think-bento-card think-color-strategy" data-category="Engineering" onclick="return false;">
+          <div class="think-bento-tag">Engineering</div>
+          <h4>How we deploy a website in 2 weeks</h4>
+        </div>
+
+        <div class="think-bento-card think-color-marketing" data-category="Digital Marketing" onclick="return false;">
+          <div class="think-bento-tag">Marketing</div>
+          <h4>SEO for local businesses — 2026 guide</h4>
+        </div>
+
+        <div class="think-bento-card think-color-mobile" data-category="Mobile" onclick="return false;">
+          <div class="think-bento-tag">Mobile</div>
+          <h4>Flutter vs native — which one to choose</h4>
+        </div>
+
+        <div class="think-bento-card think-color-ecommerce" data-category="E-Commerce" onclick="return false;">
+          <div class="think-bento-tag">E-Commerce</div>
+          <h4>How to reduce cart abandonment</h4>
+        </div>
+
+        <div class="think-bento-card think-color-engineering" data-category="Career" onclick="return false;">
+          <div class="think-bento-tag">Career</div>
+          <h4>From internship to full-time offer — an intern's journey</h4>
+        </div>
+
+        <div class="think-bento-card think-bento-cta" onclick="showPage('contact')">
+          <h4>Want more?</h4>
+          <span>View all articles →</span>
+        </div>
+       
+</div>
+ <!-- NEWSLETTER -->
+      <div class="think-newsletter">
+        <div class="think-newsletter-decor think-decor-1"></div>
+        <div class="think-newsletter-decor think-decor-2"></div>
+        <div class="think-newsletter-inner">
+          <div class="think-newsletter-eyebrow">Stay in the loop</div>
+          <h3 class="think-newsletter-title">Get our best thinking, monthly.</h3>
+          <p class="think-newsletter-sub">No spam, just one email a month with our sharpest ideas on tech, strategy and design.</p>
+          <form class="think-newsletter-form" onsubmit="handleThinkSubscribe(event)">
+            <input type="email" class="think-newsletter-input" placeholder="you@company.com" required />
+            <button type="submit" class="think-newsletter-btn">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+            <!-- COMPANY UPDATES -->
+      <div class="au-section">
+        <div class="au-eyebrow">Company Updates</div>
+        <h2 class="au-heading">We are <span>Asterisc</span></h2>
+        <p class="au-sub">A trusted digital engineering, web design &amp; mobile app development partner — ISO 9001:2015 certified.</p>
+        <div class="au-cards">
+          <div class="au-card" onclick="showPage('about')">
+            <span class="au-tag">Company News</span>
+            <h4>Asterisc Technocrat crosses 100+ projects delivered</h4>
+            <span class="au-expand">Expand
+              <svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+          </div>
+          <div class="au-card" onclick="showPage('internship')">
+            <span class="au-tag">Milestone</span>
+            <h4>2000+ interns trained across web, ML &amp; mobile domains</h4>
+            <span class="au-expand">Expand
+              <svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+          </div>
+          <div class="au-card" onclick="showPage('career')">
+            <span class="au-tag">Careers</span>
+            <h4>We're hiring across Frontend, Backend &amp; Digital Marketing</h4>
+            <span class="au-expand">Expand
+              <svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<div id="page-about" class="page">
+  <div class="inner-page">
+    <div class="page-container">
+      <div class="page-eyebrow">About Asterics</div>
+      <h2 class="page-title">Who we are</h2>
+      <p class="page-sub">Asterisc Technocrat Pvt. Ltd. — an ISO 9001:2015 internationally certified company and Central India's highest-rated tech firm on Google reviews.</p>
+
+      <div class="accordion">
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false" onclick="toggleAcc(this)">
+            <div class="acc-left"><span class="acc-num">—</span><span class="acc-title">Our story</span></div>
+            <div class="acc-icon"><svg viewBox="0 0 12 12"><line x1="6" y1="1" x2="6" y2="11" stroke-width="1.6" stroke-linecap="round"/><line x1="1" y1="6" x2="11" y2="6" stroke-width="1.6" stroke-linecap="round"/></svg></div>
+          </button>
+          <div class="accordion-body"><div class="accordion-content">
+            We are a superb custom software development company in Nagpur delivering impressive business IT solutions and related services to customers across the world. Our development services are led by a dedicated and passionate team providing the best industry executions combined with the latest technology expertise and business domain knowledge to drive digital transformation.<br><br>
+            Our expertise in understanding business challenges and professional competence allows us to create a better experience for our customers. At Asterisc Technocrat, we care about our employees and our clients — they are the most important part of our company. We cultivate a strategic culture where every individual gets an equal opportunity for growth and great exposure.
+          </div></div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false" onclick="toggleAcc(this)">
+            <div class="acc-left"><span class="acc-num">—</span><span class="acc-title">Our values</span></div>
+            <div class="acc-icon"><svg viewBox="0 0 12 12"><line x1="6" y1="1" x2="6" y2="11" stroke-width="1.6" stroke-linecap="round"/><line x1="1" y1="6" x2="11" y2="6" stroke-width="1.6" stroke-linecap="round"/></svg></div>
+          </button>
+          <div class="accordion-body"><div class="accordion-content">
+            <ul>
+              <li><strong>Award Winning</strong> — Industry recognition that boosts reputation and attracts customers and talent.</li>
+              <li><strong>Professional Staff</strong> — Our experts grow your business with professional assistance across every domain.</li>
+              <li><strong>24/7 Support</strong> — Our support and marketing strategies are available round the clock for your business.</li>
+              <li><strong>Fair Prices</strong> — Best-in-industry quality at prices designed to make great tech accessible.</li>
+            </ul>
+          </div></div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false" onclick="toggleAcc(this)">
+            <div class="acc-left"><span class="acc-num">—</span><span class="acc-title">Certifications</span></div>
+            <div class="acc-icon"><svg viewBox="0 0 12 12"><line x1="6" y1="1" x2="6" y2="11" stroke-width="1.6" stroke-linecap="round"/><line x1="1" y1="6" x2="11" y2="6" stroke-width="1.6" stroke-linecap="round"/></svg></div>
+          </button>
+          <div class="accordion-body"><div class="accordion-content">
+            <ul>
+              <li>ISO 9001:2015 Internationally Certified</li>
+              <li>Central India's highest Google-rated tech company</li>
+              <li>Trusted by clients across New Zealand, India &amp; globally</li>
+            </ul>
+          </div></div>
+        </div>
+      </div>
+
+      <div class="section-sep"></div>
+      <div class="section-label">Leadership</div>
+      <div class="section-heading">Our founders</div>
+      <div class="team-grid">
+        <div class="team-card">
+          <div class="team-avatar">CB</div>
+          <h4>Chandrakant Bobade</h4>
+          <p>Founder &amp; CEO</p>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar">SB</div>
+          <h4>Shrikant Bobade</h4>
+          <p>Director</p>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar">PS</div>
+          <h4>Pooja Sao</h4>
+          <p>Manager / Instructor</p>
+        </div>
+      </div>
+
+      <div class="section-sep"></div>
+      <div class="section-label">Team Members</div>
+      <div class="section-heading">The people building it</div>
+      <div class="team-grid">
+        <div class="team-card"><div class="team-avatar">HK</div><h4>Haris Khan</h4><p>Web Developer</p></div>
+        <div class="team-card"><div class="team-avatar">RJ</div><h4>Ruchita Jibhkate</h4><p>Java Developer</p></div>
+        <div class="team-card"><div class="team-avatar">AS</div><h4>Aaditya Sohagpure</h4><p>Web Developer</p></div>
+        <div class="team-card"><div class="team-avatar">PH</div><h4>Priyanka Hatware</h4><p>Android Developer</p></div>
+        <div class="team-card"><div class="team-avatar">AD</div><h4>Aachal Dharme</h4><p>Web Developer</p></div>
+        <div class="team-card"><div class="team-avatar">TD</div><h4>Tushar Dhanvijay</h4><p>Digital Marketing</p></div>
+        <div class="team-card"><div class="team-avatar">VD</div><h4>Vinit Dhanvijay</h4><p>Business Associate</p></div>
+      </div>
+
+      <div class="section-sep"></div>
+      <div class="section-label">Testimonials</div>
+      <div class="section-heading">What our clients say</div>
+      <div class="testimonial-grid">
+        <div class="testimonial-card">
+          <p>"Asterisc Technocrat team has worked incredibly hard and taken ownership of the best quality product development and support. I would highly recommend them for any software project."</p>
+          <div class="testimonial-name">Nick Parkin</div>
+          <div class="testimonial-role">freshhomes.co.nz</div>
+        </div>
+        <div class="testimonial-card">
+          <p>"Great Development and supporting team. Great architect creativity skills, great ideas, best experience creating many different types of apps. I am very thankful to this company."</p>
+          <div class="testimonial-name">Mitch Horton</div>
+          <div class="testimonial-role">ppsgroup.co.nz</div>
+        </div>
+        <div class="testimonial-card">
+          <p>"Asterisc has an amazing team that works around the clock to deliver on all customer requests. From first contact to deployment it has been professional. They helped us build and fine-tune our platform."</p>
+          <div class="testimonial-name">Gaurav Rathi</div>
+          <div class="testimonial-role">heatfinder.co.nz</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+ <!-- CAREER -->
+<div id="page-career" class="page">
+
+  <!-- HALF-SCREEN BACKGROUND POSTER -->
+  <div class="intern-poster">
+    <div class="intern-poster-bg">
+      <img src="carrer.jpg" alt="Asterics Technocrat team" />
+    </div>
+    <div class="intern-poster-overlay"></div>
+    <div class="intern-poster-content">
+      <div class="page-eyebrow">Careers</div>
+      <h2 class="page-title">Build your career with us</h2>
+      <p class="page-sub">Join a team that values growth, creativity, and work-life balance. Explore our open roles and grow with Asterisc Technocrat.</p>
+    </div>
+  </div>
+
+   <!-- JOB SEARCH BAR -->
+<div class="job-search-wrap">
+  
+  <div class="job-search-bar">
+    <div class="job-search-field">
+      <svg viewBox="0 0 20 20"><circle cx="9" cy="9" r="6" stroke-width="1.6" fill="none"/><line x1="14" y1="14" x2="18" y2="18" stroke-width="1.6" stroke-linecap="round"/></svg>
+      <input type="text" placeholder="Search for jobs by skill or keyword" />
+    </div>
+
+    <div class="job-search-divider"></div>
+
+    <div class="job-search-field job-search-select">
+      <svg viewBox="0 0 20 20"><path d="M10 18s6-5.5 6-10a6 6 0 1 0-12 0c0 4.5 6 10 6 10Z" stroke-width="1.4" fill="none"/><circle cx="10" cy="8" r="2" stroke-width="1.4" fill="none"/></svg>
+      <select>
+        <option>Location</option>
+        <option>Nagpur</option>
+        <option>Remote</option>
+      </select>
+    </div>
+
+    <button class="job-search-btn">
+      Search
+      <svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+  </div>
+</div>
+
+  <div class="inner-page inner-page-no-top">
+    <div class="page-container">
+
+      <!-- LIFE AT ASTERICS / CULTURE GALLERY -->
+      <div class="life-at-asterics-band">
+        <div class="lta-dashes" aria-hidden="true">
+          <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+        </div>
+        <h2 class="lta-heading">Life At Asterics</h2>
+        <div class="lta-grid">
+          <div class="lta-card" onclick="openGalleryLightbox(this)">
+            <img src="aaaaa.jpg" alt="Team Culture" />
+            <div class="lta-caption" style="background:#0f7a5c;">Team Culture</div>
+          </div>
+          <div class="lta-card" onclick="openGalleryLightbox(this)">
+            <img src="internship.jpg" alt="Learning & Growth" />
+            <div class="lta-caption" style="background:#b8720c;">Learning &amp; Growth</div>
+          </div>
+          <div class="lta-card" onclick="openGalleryLightbox(this)">
+            <img src="first .jpg" alt="Celebrations" />
+            <div class="lta-caption" style="background:#1560a8;">Celebrations</div>
+          </div>
+        </div>
+      </div>
+
+      <style>
+        .life-at-asterics-band{
+          background:var(--brinjal, #6e217d);
+          margin:48px calc(-1 * var(--page-container-px, 24px)) 0;
+          padding:48px 24px;
+          text-align:center;
+        }
+        .lta-dashes{display:flex;justify-content:center;gap:6px;margin-bottom:10px;}
+        .lta-dashes span{width:2px;height:16px;background:rgba(255,255,255,.55);}
+        .lta-heading{
+          color:#fff;
+          font-family:'Playfair Display', serif;
+          font-weight:600;
+          font-size:clamp(28px,4vw,42px);
+          margin:0 0 36px;
+          letter-spacing:.5px;
+        }
+        .lta-grid{
+          display:grid;
+          grid-template-columns:repeat(3,1fr);
+          gap:24px;
+          max-width:1100px;
+          margin:0 auto;
+        }
+        .lta-card{
+          cursor:pointer;
+          border-radius:2px;
+          overflow:hidden;
+          background:#fff;
+        }
+        .lta-card img{
+          width:100%;
+          height:220px;
+          object-fit:cover;
+          display:block;
+        }
+        .lta-caption{
+          color:#fff;
+          font-weight:700;
+          font-size:15px;
+          padding:14px 16px;
+          text-align:left;
+        }
+        @media (max-width:768px){
+          .lta-grid{grid-template-columns:1fr;}
+        }
+      </style>
+
+       <div class="section-sep"></div>
+<div class="section-label">Explore Asterics</div>
+<div class="section-heading">Where our team does its best work</div>
+<div class="asterics-showcase-grid">
+  <div class="asc-card asc-tall" onclick="showPage('career')">
+    <img src="11.jpg" alt="Why join Asterics" />
+    <div class="asc-caption">
+      <span>Why join Asterics</span>
+      <svg viewBox="0 0 20 20" width="18" height="18"><path d="M4 10h12M12 5l5 5-5 5" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </div>
+  </div>
+
+  <div class="asc-col">
+    <div class="asc-card" onclick="showPage('career')">
+      <img src="12.jpg" alt="Life at Asterics" />
+      <div class="asc-caption">
+        <span>Life at Asterics</span>
+        <svg viewBox="0 0 20 20" width="18" height="18"><path d="M4 10h12M12 5l5 5-5 5" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+    </div>
+    <div class="asc-card" onclick="showPage('about')">
+      <img src="13.jpg" alt="Meet our people" />
+      <div class="asc-caption">
+        <span>Meet our people</span>
+        <svg viewBox="0 0 20 20" width="18" height="18"><path d="M4 10h12M12 5l5 5-5 5" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+    </div>
+  </div>
+
+  <div class="asc-card asc-shift" onclick="showPage('internship')">
+    <img src="secound.jpg" alt="Career paths" />
+    <div class="asc-caption">
+      <span>Career paths</span>
+      <svg viewBox="0 0 20 20" width="18" height="18"><path d="M4 10h12M12 5l5 5-5 5" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </div>
+  </div>
+</div>
+
+      <!-- WHY JOIN US / PERKS GRID -->
+        <!-- PERKS EDITORIAL LIST — replaces the .why-grid.why-grid-shaped div inside "Why Join Us" why-section -->
+         <div class="section-label">Benefits</div>
+<div class="section-heading">Built for the people who build here</div>
+<div class="perks-list">
+
+  <div class="perk-row">
+    <span class="perk-num">01</span>
+    <div class="perk-icon">
+      <svg viewBox="0 0 20 20"><path d="M3 10l5-5 4 4 5-5" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M13 4h4v4" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </div>
+    <div class="perk-text">
+      <h4>Growth opportunities</h4>
+      <p>Clear career paths with regular reviews, so your growth is never left to chance.</p>
+    </div>
+  </div>
+
+  <div class="perk-row">
+    <span class="perk-num">02</span>
+    <div class="perk-icon">
+      <svg viewBox="0 0 20 20"><circle cx="10" cy="7" r="3" stroke-width="1.4" fill="none"/><path d="M4 17c0-3.3 2.7-6 6-6s6 2.7 6 6" stroke-width="1.4" fill="none" stroke-linecap="round"/></svg>
+    </div>
+    <div class="perk-text">
+      <h4>Hands-on mentorship</h4>
+      <p>Work directly alongside senior engineers and leadership on real client projects.</p>
+    </div>
+  </div>
+
+  <div class="perk-row">
+    <span class="perk-num">03</span>
+    <div class="perk-icon">
+      <svg viewBox="0 0 20 20"><circle cx="10" cy="10" r="7.5" stroke-width="1.4" fill="none"/><path d="M10 5.5V10l3 2" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </div>
+    <div class="perk-text">
+      <h4>Work-life balance</h4>
+      <p>Flexible hours and a healthy workload so you can do your best work sustainably.</p>
+    </div>
+  </div>
+
+  <div class="perk-row">
+    <span class="perk-num">04</span>
+    <div class="perk-icon">
+      <svg viewBox="0 0 20 20"><rect x="2" y="3" width="16" height="11" rx="1.5" stroke-width="1.4" fill="none"/><line x1="7" y1="17" x2="13" y2="17" stroke-width="1.4" stroke-linecap="round"/><line x1="10" y1="14" x2="10" y2="17" stroke-width="1.4" stroke-linecap="round"/></svg>
+    </div>
+    <div class="perk-text">
+      <h4>Latest tech stack</h4>
+      <p>Build with modern tools and frameworks — never stuck maintaining legacy systems alone.</p>
+    </div>
+  </div>
+
+  <div class="perk-row">
+    <span class="perk-num">05</span>
+    <div class="perk-icon">
+      <svg viewBox="0 0 20 20"><circle cx="7" cy="7" r="3" stroke-width="1.3" fill="none"/><circle cx="14" cy="8" r="2.4" stroke-width="1.3" fill="none"/><path d="M2 17c0-2.8 2.2-5 5-5s5 2.2 5 5M12 17c0-2-1.3-3.7-3-4.4" stroke-width="1.3" fill="none" stroke-linecap="round"/></svg>
+    </div>
+    <div class="perk-text">
+      <h4>Flat hierarchy</h4>
+      <p>Your ideas reach leadership directly — no layers of bureaucracy slowing things down.</p>
+    </div>
+  </div>
+
+  <div class="perk-row perk-row-last">
+    <span class="perk-num">06</span>
+    <div class="perk-icon">
+      <svg viewBox="0 0 20 20"><path d="M10 1.5l2.5 5.6 6.1.6-4.6 4.1 1.4 6-5.4-3.2-5.4 3.2 1.4-6-4.6-4.1 6.1-.6z" stroke-width="1.2" fill="none" stroke-linejoin="round"/></svg>
+    </div>
+    <div class="perk-text">
+      <h4>Recognition &amp; rewards</h4>
+      <p>Great work gets noticed — through appraisals, shout-outs, and performance bonuses.</p>
+    </div>
+  </div>
+
+</div>
+      <div class="section-sep"></div>
+
+      <!-- OPEN POSITIONS -->
+         <!-- WE ARE HIRING BANNER — paste in place of the "Open Positions" why-section block -->
+<div class="hiring-banner">
+  <div class="hiring-banner-left">
+    <div class="hiring-dots" aria-hidden="true">
+      <span></span><span></span><span></span><span></span><span></span>
+    </div>
+    <h2 class="hiring-headline">WE ARE<br><span>HIRING!</span></h2>
+    <p class="hiring-sub">Join a team that values growth, creativity, and real client work.</p>
+
+    <div class="hiring-roles">
+      <div class="hiring-role"><svg viewBox="0 0 20 20"><circle cx="10" cy="10" r="9" stroke-width="1.4" fill="none"/><path d="M6 10l2.5 2.5L14 7" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>Frontend Developer</div>
+      <div class="hiring-role"><svg viewBox="0 0 20 20"><circle cx="10" cy="10" r="9" stroke-width="1.4" fill="none"/><path d="M6 10l2.5 2.5L14 7" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>Java Backend Developer</div>
+      <div class="hiring-role"><svg viewBox="0 0 20 20"><circle cx="10" cy="10" r="9" stroke-width="1.4" fill="none"/><path d="M6 10l2.5 2.5L14 7" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>Android Developer</div>
+      <div class="hiring-role"><svg viewBox="0 0 20 20"><circle cx="10" cy="10" r="9" stroke-width="1.4" fill="none"/><path d="M6 10l2.5 2.5L14 7" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>Digital Marketing Executive</div>
+      <div class="hiring-role"><svg viewBox="0 0 20 20"><circle cx="10" cy="10" r="9" stroke-width="1.4" fill="none"/><path d="M6 10l2.5 2.5L14 7" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>UI / Graphic Designer</div>
+      <div class="hiring-role"><svg viewBox="0 0 20 20"><circle cx="10" cy="10" r="9" stroke-width="1.4" fill="none"/><path d="M6 10l2.5 2.5L14 7" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>HR / Talent Associate</div>
+    </div>
+
+    <div class="hiring-actions">
+      <button class="hiring-apply-btn" onclick="showPage('contact')">
+        <svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Apply now
+      </button>
+      <div class="hiring-contact">
+        <svg viewBox="0 0 15 15"><path d="M2 2.5C2 2.5 3.5 2 4.5 4.5C5.5 7 5 8 5 8C5 8 6.5 10.5 9 11.5C9 11.5 10 11 11.5 10C13 9 13.5 11 13.5 11L12.5 13C12.5 13 5 13.5 2 5.5L2 2.5Z" stroke-width="1.2" stroke-linejoin="round"/></svg>
+        <span>Call to know more<strong>+91-7744822228</strong></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="hiring-banner-right">
+    <img src="hireing.jpg" alt="Asterics Technocart team" />
+    <div class="hiring-follow-tag">
+      <span>Follow us</span>
+      <div class="hiring-follow-icons">
+        <a onclick="return false;" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><rect x="3" y="9" width="4" height="12"/><circle cx="5" cy="4" r="2"/><path d="M11 21v-7a3 3 0 0 1 6 0v7M11 21v-6"/></svg></a>
+        <a onclick="return false;" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <div class="section-sep"></div>
+
+      <!-- HIRING PROCESS TIMELINE -->
+<div class="section-label">Hiring Process</div>
+  <div class="section-heading">How we hire, step by step</div>
+    <div class="hiring-tracker">
+  <div class="hiring-tracker-line">
+    <div class="hiring-tracker-nodes">
+      <div class="hiring-node"><span>1</span></div>
+      <div class="hiring-node"><span>2</span></div>
+      <div class="hiring-node"><span>3</span></div>
+      <div class="hiring-node"><span>4</span></div>
+      <div class="hiring-node"><span>5</span></div>
+    </div>
+  </div>
+  <div class="hiring-tracker-labels">
+    <div class="hiring-step">
+      <h4>Apply</h4>
+      <p>Submit your application and resume for the role you're interested in.</p>
+    </div>
+    <div class="hiring-step">
+      <h4>Screening call</h4>
+      <p>A short call with our HR team to understand your background and expectations.</p>
+    </div>
+    <div class="hiring-step">
+      <h4>Technical round</h4>
+      <p>A hands-on round with the team to assess your skills relevant to the role.</p>
+    </div>
+    <div class="hiring-step">
+      <h4>HR round</h4>
+      <p>A conversation about culture fit, compensation, and joining timelines.</p>
+    </div>
+    <div class="hiring-step">
+      <h4>Offer</h4>
+      <p>Successful candidates receive an offer letter and onboarding details.</p>
+    </div>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+
+<!-- INTERNSHIP -->
+ <div id="page-internship" class="page">
+
+  <!-- HALF-SCREEN BACKGROUND POSTER (internship page only) -->
+    <div class="intern-poster">
+    <div class="intern-poster-bg">
+    <video autoplay muted loop playsinline preload="auto">
+      <source src="video.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="intern-poster-overlay"></div>
+  <div class="intern-poster-content">
+    <div class="page-eyebrow">Internships</div>
+    <h2 class="page-title">We are hiring interns!</h2>
+    <p class="page-sub">Join 2000+ trained interns at Asterisc Technocrat. Gain practical skills, industry knowledge, certifications, and professional mentorship — online or offline, 1 to 6 months.</p>
+  </div>
+</div>
+
+ <div class="intern-stats-strip-wrap">
+  <div class="intern-stats-strip">
+    <div class="intern-stat">
+      <div class="intern-stat-icon">
+        <svg viewBox="0 0 20 20"><circle cx="10" cy="8" r="3.2" stroke-width="1.4" fill="none"/><path d="M4 17c0-3.3 2.7-6 6-6s6 2.7 6 6" stroke-width="1.4" fill="none" stroke-linecap="round"/></svg>
+      </div>
+      <div class="intern-stat-num">2156+</div>
+      <div class="intern-stat-label">Happy interns</div>
+    </div>
+    <div class="intern-stat">
+      <div class="intern-stat-icon">
+        <svg viewBox="0 0 20 20"><path d="M2 7l8-4 8 4-8 4-8-4z" stroke-width="1.3" fill="none" stroke-linejoin="round"/><path d="M5 9v4c0 1.1 2.2 2 5 2s5-.9 5-2V9" stroke-width="1.3" fill="none"/></svg>
+      </div>
+      <div class="intern-stat-num">1465+</div>
+      <div class="intern-stat-label">Total trained</div>
+    </div>
+    <div class="intern-stat">
+      <div class="intern-stat-icon">
+        <svg viewBox="0 0 20 20"><rect x="3" y="2.5" width="14" height="15" rx="1.5" stroke-width="1.3" fill="none"/><path d="M6.5 8l2 2 4-4" stroke-width="1.3" fill="none" stroke-linecap="round" stroke-linejoin="round"/><line x1="6" y1="13.5" x2="14" y2="13.5" stroke-width="1.2" stroke-linecap="round"/></svg>
+      </div>
+      <div class="intern-stat-num">728+</div>
+      <div class="intern-stat-label">Tasks submitted</div>
+    </div>
+    <div class="intern-stat">
+      <div class="intern-stat-icon">
+        <svg viewBox="0 0 20 20"><circle cx="10" cy="10" r="7.5" stroke-width="1.3" fill="none"/><path d="M10 5.5V10l3 2" stroke-width="1.3" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div class="intern-stat-num">525+</div>
+      <div class="intern-stat-label">Hours of support</div>
+    </div>
+  </div>
+</div>
+
+   <div class="inner-page inner-page-no-top">
+    <div class="page-container">
+      <div class="section-label">Internship Domains</div>
+      <div class="section-heading">Choose your domain</div>
+      <p style="font-size:15px;color:var(--gray-600);margin-bottom:2.75rem;">Diverse opportunities across multiple domains, tailored to match your preferences.</p>
+       <style>
+        .domain-desc {
+          font-size: 13.5px;
+          color: var(--gray-600);
+          line-height: 1.65;
+          margin-bottom: 1.25rem;
+          min-height: 65px;
+        }
+       </style>
+        
+         <div class="intern-domains">
+
+  <div class="domain-card">
+    <div class="domain-image">
+      <img src="web dev.jpg" alt="Web Development" />
+      <div class="domain-icon">
+        <svg viewBox="0 0 20 20"><rect x="2" y="3" width="16" height="12" rx="2" stroke-width="1.5"/><line x1="7" y1="17" x2="13" y2="17" stroke-width="1.5" stroke-linecap="round"/><line x1="10" y1="15" x2="10" y2="17" stroke-width="1.5" stroke-linecap="round"/></svg>
+      </div>
+    </div>
+    <div class="domain-card-body">
+      <h3 style="margin-top:1.25rem;">Web Development</h3>
+      <p class="domain-desc">Learn to build responsive, modern websites using HTML, CSS, JavaScript and popular frameworks, working on real client-style projects.</p>
+      <button class="domain-apply" onclick="showPage('contact')" style="margin-top:auto;">Apply now</button>
+    </div>
+  </div>
+
+  <div class="domain-card">
+    <div class="domain-image">
+      <img src="machine learing.jpg" alt="Machine Learning" />
+      <div class="domain-icon">
+        <svg viewBox="0 0 20 20"><circle cx="10" cy="10" r="3" stroke-width="1.5"/><path d="M10 2v2M10 16v2M2 10h2M16 10h2M4.2 4.2l1.4 1.4M14.4 14.4l1.4 1.4M4.2 15.8l1.4-1.4M14.4 5.6l1.4-1.4" stroke-width="1.5" stroke-linecap="round"/></svg>
+      </div>
+    </div>
+    <div class="domain-card-body">
+      <h3 style="margin-top:1.25rem;">Machine Learning</h3>
+      <p class="domain-desc">Get hands-on with data preprocessing, model building and real-world AI use cases using Python and popular ML libraries.</p>
+      <button class="domain-apply" onclick="showPage('contact')" style="margin-top:auto;">Apply now</button>
+    </div>
+  </div>
+
+  <div class="domain-card">
+    <div class="domain-image">
+      <img src="mobail dev.jpg" alt="Android Dev" />
+      <div class="domain-icon">
+        <svg viewBox="0 0 20 20"><rect x="5" y="2" width="10" height="16" rx="2" stroke-width="1.5"/><circle cx="10" cy="15" r="1" fill="var(--brinjal)"/></svg>
+      </div>
+    </div>
+    <div class="domain-card-body">
+      <h3 style="margin-top:1.25rem;">Android Dev</h3>
+      <p class="domain-desc">Build native Android applications using Java and Kotlin, covering UI design, app logic, and deployment fundamentals.</p>
+      <button class="domain-apply" onclick="showPage('contact')" style="margin-top:auto;">Apply now</button>
+    </div>
+  </div>
+
+  <div class="domain-card">
+    <div class="domain-image">
+      <img src="Artificial Intelligence.jpg" alt="Artificial Intelligence" />
+      <div class="domain-icon">
+         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="4" y="6" width="16" height="12" rx="2"/><circle cx="9" cy="12" r="1.2" fill="currentColor" stroke="none"/><circle cx="15" cy="12" r="1.2" fill="currentColor" stroke="none"/><path d="M12 6V3M9 3h6" stroke-linecap="round"/></svg>
+
+       </div>
+    </div>
+    <div class="domain-card-body">
+      <h3 style="margin-top:1.25rem;">Artificial Intelligence</h3>
+      <p class="domain-desc">Explore the fundamentals of Artificial Intelligence — from machine learning concepts to real-world AI applications.</p>
+      <button class="domain-apply" onclick="showPage('contact')" style="margin-top:auto;">Apply now</button>
+    </div>
+  </div>
+
+  <div class="domain-card">
+    <div class="domain-image">
+      <img src="Digital marketing .jpg" alt="Digital Marketing" />
+      <div class="domain-icon">
+        <svg viewBox="0 0 20 20"><path d="M2 14l4-4 3 3 4-5 5 6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+    </div>
+    <div class="domain-card-body">
+      <h3 style="margin-top:1.25rem;">Digital Marketing</h3>
+      <p class="domain-desc">Learn SEO, social media marketing, and ad campaign strategies to help brands grow their online presence and reach.</p>
+      <button class="domain-apply" onclick="showPage('contact')" style="margin-top:auto;">Apply now</button>
+    </div>
+  </div>
+
+  <div class="domain-card">
+    <div class="domain-image">
+      <img src="Human Resorces.jpg" alt="Human Resources" />
+      <div class="domain-icon">
+        <svg viewBox="0 0 20 20"><circle cx="10" cy="7" r="3" stroke-width="1.5"/><path d="M4 17c0-3.3 2.7-6 6-6s6 2.7 6 6" stroke-width="1.5" stroke-linecap="round"/></svg>
+      </div>
+    </div>
+    <div class="domain-card-body">
+      <h3 style="margin-top:1.25rem;">Human Resources</h3>
+      <p class="domain-desc">Gain exposure to recruitment, onboarding, and employee engagement processes in a real organisational setting.</p>
+      <button class="domain-apply" onclick="showPage('contact')" style="margin-top:auto;">Apply now</button>
+    </div>
+  </div>
+
+ </div>
+    </div>
+  </div>
+
+  <div class="alumni-section">
+      <div class="alumni-inner">
+        <div class="page-eyebrow alumni-eyebrow">Our Alumni Network</div>
+        <h2 class="alumni-heading">Where our interns build their careers</h2>
+        <p class="alumni-sub">Our internship program has shaped careers across some of the biggest names in tech and consulting — here's where a few of our trained interns work today.</p>
+        <div class="alumni-logo-grid">
+          <div class="alumni-logo-cell" onclick="openGalleryLightbox(this)"><img src="infosys.jpg" alt="Infosys" /></div>
+          <div class="alumni-logo-cell" onclick="openGalleryLightbox(this)"><img src="Wipro.jpg" alt="Wipro" /></div>
+          <div class="alumni-logo-cell" onclick="openGalleryLightbox(this)"><img src="capge.jpg" alt="Capgemini" /></div>
+          <div class="alumni-logo-cell" onclick="openGalleryLightbox(this)"><img src="IBM.jpg" alt="IBM" /></div>
+          <div class="alumni-logo-cell" onclick="openGalleryLightbox(this)"><img src="Deloitte.jpg" alt="Deloitte" /></div>
+          <div class="alumni-logo-cell" onclick="openGalleryLightbox(this)"><img src="cognizant.jpg" alt="Cognizant" /></div>
+          <div class="alumni-logo-cell" onclick="openGalleryLightbox(this)"><img src="acce.jpg" alt="Accenture" /></div>
+          <div class="alumni-logo-cell" onclick="openGalleryLightbox(this)"><img src="jp mor.jpg" alt="J.P. Morgan" /></div>
+          <div class="alumni-logo-cell" onclick="openGalleryLightbox(this)"><img src="TCS.jpg" alt="TCS" /></div>
+          <div class="alumni-logo-cell" onclick="openGalleryLightbox(this)"><img src="AWSS.jpg" alt="AWS" /></div>
+        </div>
+      </div>
+     </div>
+  
+
+   <div class="inner-page-no-top" style="padding-top:0;">
+    <div class="page-container">
+      <div class="section-sep" style="margin-top:0;"></div>
+
+        <div class="roadmap-section">
+  <div class="section-label">Internship Roadmap</div>
+  <div class="section-heading">Your journey, step by step</div>
+  <p>A clear roadmap for completing a productive and rewarding internship at Asterisc Technocrat.</p>
+
+  <div class="roadmap-chevrons">
+
+    <div class="chevron-row chevron-right">
+      <div class="chevron-box">
+        <span class="chevron-step">Step 1</span>
+        <h4>Apply for an Internship</h4>
+        <p>Apply in your interested domain. Duration is 1 month. Students from any branch can apply.</p>
+      </div>
+      <div class="chevron-icon">1</div>
+    </div>
+
+    <div class="chevron-row chevron-left">
+      <div class="chevron-icon">2</div>
+      <div class="chevron-box">
+        <span class="chevron-step">Step 2</span>
+        <h4>Get an Offer Letter</h4>
+        <p>Our team will review your profile and send you an offer letter of internship.</p>
+      </div>
+    </div>
+
+    <div class="chevron-row chevron-right">
+      <div class="chevron-box">
+        <span class="chevron-step">Step 3</span>
+        <h4>Get Your Internship Batch</h4>
+        <p>After the offer letter, you'll be assigned to a batch for the internship duration.</p>
+      </div>
+      <div class="chevron-icon">3</div>
+    </div>
+
+    <div class="chevron-row chevron-left">
+      <div class="chevron-icon">4</div>
+      <div class="chevron-box">
+        <span class="chevron-step">Step 4</span>
+        <h4>Task Allocation</h4>
+        <p>Projects will be assigned to you that enhance your skills in your interested domain.</p>
+      </div>
+    </div>
+
+    <div class="chevron-row chevron-right">
+      <div class="chevron-box">
+        <span class="chevron-step">Step 5</span>
+        <h4>Complete the Tasks</h4>
+        <p>Complete your allocated projects as per the given categories and guidelines.</p>
+      </div>
+      <div class="chevron-icon">5</div>
+    </div>
+
+    <div class="chevron-row chevron-left">
+      <div class="chevron-icon">6</div>
+      <div class="chevron-box">
+        <span class="chevron-step">Step 6</span>
+        <h4>Submit Tasks</h4>
+        <p>Submit your completed projects on the internship portal for evaluation.</p>
+      </div>
+    </div>
+
+    <div class="chevron-row chevron-right">
+      <div class="chevron-box">
+        <span class="chevron-step">Step 7</span>
+        <h4>Project Verification</h4>
+        <p>Our team will verify your submissions against the project completion criteria.</p>
+      </div>
+      <div class="chevron-icon">7</div>
+    </div>
+
+    <div class="chevron-row chevron-left">
+      <div class="chevron-icon">8</div>
+      <div class="chevron-box">
+        <span class="chevron-step">Step 8</span>
+        <h4>Internship Certificate</h4>
+        <p>After successful evaluation, you'll receive an internship completion certificate.</p>
+      </div>
+    </div>
+
+    <div class="chevron-row chevron-right">
+      <div class="chevron-box">
+        <span class="chevron-step">Step 9</span>
+        <h4>Letter of Recommendation</h4>
+        <p>Meet the project completion criteria and earn a letter of recommendation from Asterisc.</p>
+      </div>
+      <div class="chevron-icon">9</div>
+    </div>
+
+    <div class="chevron-row chevron-left">
+      <div class="chevron-icon">10</div>
+      <div class="chevron-box">
+        <span class="chevron-step">Step 10</span>
+        <h4>Certificates &amp; Goodies</h4>
+        <p>After a successful internship, we provide certificates and goodies to our trainees.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+<div class="section-sep"></div>
+
+<div class="faq-section">
+  <div class="section-label">FAQs</div>
+  <div class="section-heading">Common questions about our internship</div>
+
+  <div class="faq-list">
+
+    <div class="faq-item">
+      <button class="faq-trigger" onclick="toggleFaq(this)">
+        <span class="faq-icon">
+          <svg viewBox="0 0 12 12"><path d="M6 1v10M2 7l4 4 4-4" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+        <span class="faq-question">How To Apply For Internships?</span>
+      </button>
+      <div class="faq-body">
+        <div class="faq-content">
+          Simply choose your interested domain from the Internship Domains section above and click "Apply Now." Fill out the contact form and our team will review your profile and get back to you.
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-trigger" onclick="toggleFaq(this)">
+        <span class="faq-icon">
+          <svg viewBox="0 0 12 12"><path d="M6 1v10M2 7l4 4 4-4" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+        <span class="faq-question">Which type of projects do we have during internship?</span>
+      </button>
+      <div class="faq-body">
+        <div class="faq-content">
+          Projects vary by domain — from building real websites and apps to working on live client-style tasks in web development, machine learning, Android, content writing, digital marketing, and HR, so you get hands-on industry exposure.
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-trigger" onclick="toggleFaq(this)">
+        <span class="faq-icon">
+          <svg viewBox="0 0 12 12"><path d="M6 1v10M2 7l4 4 4-4" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+        <span class="faq-question">Where is the internship location?</span>
+      </button>
+      <div class="faq-body">
+        <div class="faq-content">
+          Our internships are available both online (remote) and offline at our office — 151, Friends Colony, Katol Road, Nagpur - 440 013, Maharashtra.
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-trigger" onclick="toggleFaq(this)">
+        <span class="faq-icon">
+          <svg viewBox="0 0 12 12"><path d="M6 1v10M2 7l4 4 4-4" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+        <span class="faq-question">What will be the duration of internship?</span>
+      </button>
+      <div class="faq-body">
+        <div class="faq-content">
+          Our standard internship duration is 1 month, with flexibility to extend up to 6 months depending on the domain and project requirements.
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-trigger" onclick="toggleFaq(this)">
+        <span class="faq-icon">
+          <svg viewBox="0 0 12 12"><path d="M6 1v10M2 7l4 4 4-4" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+        <span class="faq-question">I have completed my tasks well before deadline. When will I get a certificate?</span>
+      </button>
+      <div class="faq-body">
+        <div class="faq-content">
+          Once your submitted tasks are verified by our team against the project completion criteria, your internship certificate is issued promptly — you don't have to wait for the full duration to end.
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+      <div class="section-sep"></div>
+      <div class="section-label">Our Mentors</div>
+<div class="section-heading">Who will guide you</div>
+
+<div class="mentor-grid">
+
+  <div class="mentor-card">
+    <div class="mentor-photo-wrap">
+      <svg class="mentor-ring" viewBox="0 0 100 100">
+        <circle cx="50" cy="50" r="46" fill="none" stroke="#6e217d" stroke-width="4" stroke-dasharray="215 75" stroke-linecap="round" transform="rotate(-90 50 50)"/>
+      </svg>
+      <img class="mentor-photo" src="PUT_YOUR_IMAGE_PATH_HERE.jpg" alt="Chandrakant Bobade" />
+    </div>
+    <div class="mentor-info">
+      <h4 class="mentor-name">Chandrakant Bobade</h4>
+      <span class="mentor-role" style="color:#6e217d">All Stack Developer</span>
+      <p class="mentor-desc">With years of experience across the full stack, Chandrakant mentors interns on real-world architecture, clean code, and problem solving.</p>
+    </div>
+  </div>
+
+  <div class="mentor-card">
+    <div class="mentor-photo-wrap">
+      <svg class="mentor-ring" viewBox="0 0 100 100">
+        <circle cx="50" cy="50" r="46" fill="none" stroke="#c9448f" stroke-width="4" stroke-dasharray="215 75" stroke-linecap="round" transform="rotate(-90 50 50)"/>
+      </svg>
+      <img class="mentor-photo" src="PUT_YOUR_IMAGE_PATH_HERE.jpg" alt="Pooja Sao" />
+    </div>
+    <div class="mentor-info">
+      <h4 class="mentor-name">Pooja Sao</h4>
+      <span class="mentor-role" style="color:#c9448f">Full Stack Developer</span>
+      <p class="mentor-desc">Pooja guides interns through hands-on full stack projects, helping them build confidence with both frontend and backend development.</p>
+    </div>
+  </div>
+
+  <div class="mentor-card">
+    <div class="mentor-photo-wrap">
+      <svg class="mentor-ring" viewBox="0 0 100 100">
+        <circle cx="50" cy="50" r="46" fill="none" stroke="#862f93" stroke-width="4" stroke-dasharray="215 75" stroke-linecap="round" transform="rotate(-90 50 50)"/>
+      </svg>
+      <img class="mentor-photo" src="PUT_YOUR_IMAGE_PATH_HERE.jpg" alt="Ruchita Jibhkate" />
+    </div>
+    <div class="mentor-info">
+      <h4 class="mentor-name">Ruchita Jibhkate</h4>
+      <span class="mentor-role" style="color:#862f93">Android Developer</span>
+      <p class="mentor-desc">Ruchita mentors interns in Android app development, covering everything from UI design to app security and deployment.</p>
+    </div>
+  </div>
+
+  <div class="mentor-card">
+    <div class="mentor-photo-wrap">
+      <svg class="mentor-ring" viewBox="0 0 100 100">
+        <circle cx="50" cy="50" r="46" fill="none" stroke="#4a1655" stroke-width="4" stroke-dasharray="215 75" stroke-linecap="round" transform="rotate(-90 50 50)"/>
+      </svg>
+      <img class="mentor-photo" src="PUT_YOUR_IMAGE_PATH_HERE.jpg" alt="Haris Khan" />
+    </div>
+    <div class="mentor-info">
+      <h4 class="mentor-name">Haris Khan</h4>
+      <span class="mentor-role" style="color:#4a1655">Web Developer</span>
+      <p class="mentor-desc">Haris helps interns master responsive web design and modern development practices through real client-style projects.</p>
+    </div>
+  </div>
+
+</div>
+
+      <div class="section-sep"></div>
+      <div class="section-label">What our students say</div>
+      <div class="section-heading">Intern experiences</div>
+      <div class="testimonial-grid-v2">
+       <div class="testimonial-card-v2">
+  <svg class="tm-quote-icon" viewBox="0 0 24 24"><path d="M9.5 8C6.5 8 4 10.5 4 13.5S6.5 19 9.5 19c0-3-1-5-3-6.5C7.5 11 9.5 10.5 9.5 8Zm10 0c-3 0-5.5 2.5-5.5 5.5S16.5 19 19.5 19c0-3-1-5-3-6.5C17.5 11 19.5 10.5 19.5 8Z" fill="currentColor"/></svg>
+  <p class="tm-text">I have completed an internship at Asterisc Technocrats and it was a fantastic experience. A supportive work environment with knowledgeable team members. I gained a well-rounded understanding of the industry.</p>
+  <div class="tm-footer">
+    <div class="tm-name">Rajlaxmi Meshram</div>
+    <div class="tm-role">Web Developer</div>
+  </div>
+</div>
+
+<div class="testimonial-card-v2">
+  <svg class="tm-quote-icon" viewBox="0 0 24 24"><path d="M9.5 8C6.5 8 4 10.5 4 13.5S6.5 19 9.5 19c0-3-1-5-3-6.5C7.5 11 9.5 10.5 9.5 8Zm10 0c-3 0-5.5 2.5-5.5 5.5S16.5 19 19.5 19c0-3-1-5-3-6.5C17.5 11 19.5 10.5 19.5 8Z" fill="currentColor"/></svg>
+  <p class="tm-text">My Full Stack development internship was enriching. It provided practical exposure to real-world development, enhanced my technical skills, and let me collaborate with experienced professionals. Highly recommended.</p>
+  <div class="tm-footer">
+    <div class="tm-name">Gaurab Dupare</div>
+    <div class="tm-role">Full Stack Developer</div>
+  </div>
+</div>
+
+<div class="testimonial-card-v2">
+  <svg class="tm-quote-icon" viewBox="0 0 24 24"><path d="M9.5 8C6.5 8 4 10.5 4 13.5S6.5 19 9.5 19c0-3-1-5-3-6.5C7.5 11 9.5 10.5 9.5 8Zm10 0c-3 0-5.5 2.5-5.5 5.5S16.5 19 19.5 19c0-3-1-5-3-6.5C17.5 11 19.5 10.5 19.5 8Z" fill="currentColor"/></svg>
+  <p class="tm-text">As an intern, the experience was fantastic. The company was highly supportive and invested in my growth. I highly recommend this internship to anyone looking for a fulfilling and educational experience.</p>
+  <div class="tm-footer">
+    <div class="tm-name">Raju Bhasme</div>
+    <div class="tm-role">Java Developer</div>
+    </div>
+  </div>
+</div>
+  
+</div>
+   </div>
+  </div>
+</div>
+
+ <!-- ============================================================
+     CONTACT — replace the whole existing <div id="page-contact" class="page"> ... </div>
+     block in index.html with this
+     ============================================================ -->
+<div id="page-contact" class="page">
+  <div class="inner-page">
+    <div class="page-container wide">
+      <div class="page-eyebrow">Contact</div>
+      <h2 class="page-title">Let's talk</h2>
+      <p class="page-sub">Have a project in mind or want to apply? We respond to every inquiry within one business day.</p>
+
+      <div class="contact-card">
+
+        <div class="contact-card-left">
+          <div class="cc-decor cc-decor-1"></div>
+          <div class="cc-decor cc-decor-2"></div>
+
+          <div class="cc-left-inner">
+            <h3 class="cc-left-heading">Contact<br>Information</h3>
+            <p class="cc-left-sub">Fill out the form and our team will get back to you within one business day — whether it's a project, an internship, or a career question.</p>
+
+            <div class="cc-detail-list">
+              <div class="cc-detail-row">
+                <span class="cc-detail-icon">
+                  <svg viewBox="0 0 20 20"><path d="M2 2.5C2 2.5 3.5 2 4.5 4.5C5.5 7 5 8 5 8C5 8 6.5 10.5 9 11.5C9 11.5 10 11 11.5 10C13 9 13.5 11 13.5 11L12.5 13C12.5 13 5 13.5 2 5.5L2 2.5Z" stroke-width="1.4" fill="none" stroke-linejoin="round"/></svg>
+                </span>
+                <div>
+                  <span class="cc-detail-label">Call us</span>
+                  <span class="cc-detail-value">+91-7744822228</span>
+                </div>
+              </div>
+
+              <div class="cc-detail-row">
+                <span class="cc-detail-icon">
+                  <svg viewBox="0 0 20 20"><rect x="2" y="4" width="16" height="12" rx="1.5" stroke-width="1.4" fill="none"/><path d="M2.5 5.5L10 11L17.5 5.5" stroke-width="1.4" fill="none"/></svg>
+                </span>
+                <div>
+                  <span class="cc-detail-label">Email us</span>
+                  <span class="cc-detail-value">hello@asterisc.in</span>
+                </div>
+              </div>
+
+              <div class="cc-detail-row">
+                <span class="cc-detail-icon">
+                  <svg viewBox="0 0 20 20"><path d="M10 18s6-5.5 6-10a6 6 0 1 0-12 0c0 4.5 6 10 6 10Z" stroke-width="1.4" fill="none"/><circle cx="10" cy="8" r="2" stroke-width="1.4" fill="none"/></svg>
+                </span>
+                <div>
+                  <span class="cc-detail-label">Visit us</span>
+                  <span class="cc-detail-value">151, Friends Colony, Katol Road,<br>Nagpur - 440 013</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="cc-social">
+              <a onclick="return false;" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><rect x="3" y="9" width="4" height="12"/><circle cx="5" cy="4" r="2"/><path d="M11 21v-7a3 3 0 0 1 6 0v7M11 21v-6"/></svg></a>
+              <a onclick="return false;" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+              <a onclick="return false;" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M15 4h-2a4 4 0 0 0-4 4v3H7v4h2v7h4v-7h3l1-4h-4V8a1 1 0 0 1 1-1h3z"/></svg></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-card-right">
+          <h3 class="cc-form-heading">Send us a message</h3>
+          <p class="cc-form-sub">Tell us a little about what you need — we'll take it from there.</p>
+
+          <div class="form-row">
+            <div class="form-group"><label>First name</label><input type="text" placeholder="Rahul" /></div>
+            <div class="form-group"><label>Last name</label><input type="text" placeholder="Sharma" /></div>
+          </div>
+          <div class="form-row">
+            <div class="form-group"><label>Work email</label><input type="email" id="contact-email" placeholder="rahul@company.com" /></div>
+            <div class="form-group"><label>Phone</label><input type="tel" placeholder="+91 99999 00000" /></div>
+          </div>
+          <div class="form-group">
+            <label>Subject</label>
+            <select>
+              <option disabled selected>Select a topic</option>
+              <option>Project inquiry</option>
+              <option>Internship application</option>
+              <option>Career opportunity</option>
+              <option>Partnership</option>
+              <option>General</option>
+            </select>
+          </div>
+          <div class="form-group"><label>Message</label><textarea placeholder="Tell us about your project or enquiry..."></textarea></div>
+          <button class="btn-submit cc-submit" onclick="handleSubmit()">
+            Send message
+            <svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+           
+
+<!-- MODAL -->
+<div class="modal-overlay" id="modal-overlay" onclick="closeModalOutside(event)">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal()">✕</button>
+    <div class="modal-tabs">
+      <button class="modal-tab active" id="tab-login" onclick="switchTab('login')">Log in</button>
+      <button class="modal-tab" id="tab-signup" onclick="switchTab('signup')">Sign up</button>
+    </div>
+    <div id="modal-login">
+      <div class="modal-form">
+        <input type="email" placeholder="Email address" />
+        <input type="password" placeholder="Password" />
+        <button class="modal-submit">Sign in</button>
+      </div>
+    </div>
+    <div id="modal-signup" style="display:none;">
+      <div class="modal-form">
+        <input type="text" placeholder="Full name" />
+        <input type="email" placeholder="Email address" />
+        <input type="password" placeholder="Create a password" />
+        <button class="modal-submit">Create account</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- GALLERY LIGHTBOX -->
+<div class="lightbox-overlay" id="lightbox-overlay" onclick="closeLightbox(event)">
+  <button class="lightbox-close" onclick="closeLightbox(event)">✕</button>
+  <div class="lightbox-frame">
+    <img id="lightbox-img" src="" alt="" />
+    <div class="lightbox-caption" id="lightbox-caption"></div>
+  </div>
+</div>
+
+<!-- LOGO POPUP -->
+<div class="logo-popup-overlay" id="logo-popup-overlay" onclick="closeLogoPopup(event)">
+  <div class="logo-popup-frame">
+    <button class="logo-popup-close" onclick="closeLogoPopup(event)">✕</button>
+    <img class="logo-popup-img" src="Aterics logo.jpg" alt="Asterisc Technocrat logo" />
+    <div class="logo-popup-caption">Asterisc Technocrat</div>
+  </div>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
