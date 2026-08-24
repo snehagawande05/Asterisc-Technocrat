@@ -135,21 +135,59 @@
   </button>
 </nav>
 
-<div class="mobile-menu-overlay" id="mobile-menu-overlay" onclick="closeMobileMenuOutside(event)">
+ <div class="mobile-menu-overlay" id="mobile-menu-overlay" onclick="closeMobileMenuOutside(event)">
   <div class="mobile-menu-panel">
     <button class="mobile-menu-close" onclick="closeMobileMenu()">✕</button>
-    <a onclick="showPage('what-we-do'); closeMobileMenu();">What We Do</a>
+
+    <details class="mobile-menu-group">
+      <summary>What We Do</summary>
+      <div class="mobile-submenu">
+        <span class="mobile-submenu-label">Services</span>
+        <a onclick="showPage('what-we-do'); closeMobileMenu();">Website Design</a>
+        <a onclick="showPage('what-we-do'); closeMobileMenu();">Mobile Application</a>
+        <a onclick="showPage('what-we-do'); closeMobileMenu();">E-Commerce</a>
+        <a onclick="showPage('what-we-do'); closeMobileMenu();">Software Development</a>
+        <span class="mobile-submenu-label">Solutions</span>
+        <a onclick="showPage('what-we-do'); closeMobileMenu();">Digital Marketing</a>
+        <a onclick="showPage('what-we-do'); closeMobileMenu();">Graphic Design</a>
+        <a onclick="showPage('what-we-do'); closeMobileMenu();">Branding &amp; Identity</a>
+        <a onclick="showPage('what-we-do'); closeMobileMenu();">Cloud &amp; Hosting</a>
+      </div>
+    </details>
+
     <a onclick="showPage('what-we-think'); closeMobileMenu();">What We Think</a>
-    <a onclick="showPage('about'); closeMobileMenu();">About Asterics</a>
-    <a onclick="showPage('career'); closeMobileMenu();">Careers</a>
-    <a onclick="showPage('internship'); closeMobileMenu();">Internships</a>
+
+    <details class="mobile-menu-group">
+      <summary>About Asterics</summary>
+      <div class="mobile-submenu">
+        <span class="mobile-submenu-label">What Sets Us Apart</span>
+        <span class="mobile-submenu-fact">A Decade of Reliable Delivery</span>
+        <span class="mobile-submenu-fact">Internationally Certified Quality</span>
+        <span class="mobile-submenu-fact">Skilled, Dedicated Team</span>
+        <span class="mobile-submenu-fact">Rooted in Nagpur, Trusted Beyond</span>
+        <span class="mobile-submenu-label">What We've Achieved</span>
+        <span class="mobile-submenu-fact">100+ Successful Launches</span>
+        <span class="mobile-submenu-fact">2000+ Careers Kickstarted</span>
+        <span class="mobile-submenu-fact">70+ Businesses Grown With Us</span>
+        <span class="mobile-submenu-fact">Presence Across NZ &amp; India</span>
+       </div>
+    </details>
+
+    <details class="mobile-menu-group">
+      <summary>Careers</summary>
+      <div class="mobile-submenu">
+        <a onclick="showPage('career'); closeMobileMenu();">Career Opportunities</a>
+        <a onclick="showPage('internship'); closeMobileMenu();">Internships</a>
+      </div>
+    </details>
+
     <a onclick="showPage('contact'); closeMobileMenu();">Contact Us</a>
+
     <div class="mobile-menu-auth">
       <button class="btn-auth" onclick="openModal('login'); closeMobileMenu();">Login / Sign Up</button>
     </div>
   </div>
 </div>
-
 <!-- HOME PAGE -->
  <div id="page-home" class="page active">
   <div class="hero-wrapper">
@@ -225,7 +263,7 @@
       <p class="page-sub">
         We are a superb custom software development company in Nagpur delivering impressive business IT solutions and related services to customers across the world. Our development services are led by a dedicated and passionate team providing the best industry executions combined with the latest technology expertise and business domain knowledge to drive digital transformation.
       </p>
-      <button class="job-btn" onclick="showPage('about')">Discover More →</button>
+      <button class="job-btn" >Discover More →</button>
     </div>
   </div>
 
@@ -397,21 +435,7 @@
       <footer class="site-footer">
   <div class="footer-container">
 
-    <div class="footer-map-card">
-      <div class="footer-map-visual">
-        <iframe
-          src="https://maps.google.com/maps?q=151+Friends+Colony+Katol+Road+Nagpur&output=embed"
-          width="100%" height="100%" style="border:0;" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-          title="Asterisc Technocart Office Location">
-        </iframe>
-      </div>
-      <div class="footer-map-info">
-        <div class="footer-map-title">Visit our office</div>
-        <p>151, Friends Colony, Katol Road,<br>Nagpur - 440 013, Maharashtra</p>
-        <a class="footer-map-link" href="https://www.google.com/maps/search/?api=1&query=151+Friends+Colony+Katol+Road+Nagpur" target="_blank" rel="noopener">Get Directions →</a>
-      </div>
-    </div>
+     
 
     <div class="footer-sitemap">
       <div class="footer-col footer-col-brand">
@@ -443,8 +467,7 @@
       <div class="footer-col">
         <div class="footer-col-title">Company</div>
         <div class="footer-links">
-          <a onclick="showPage('about')">About Us</a>
-          <a onclick="showPage('what-we-think')">What We Think</a>
+           <a onclick="showPage('what-we-think')">What We Think</a>
           <a onclick="showPage('career')">Careers</a>
           <a onclick="showPage('internship')">Internships</a>
           <a onclick="showPage('contact')">Contact Us</a>
@@ -699,7 +722,7 @@
         <h2 class="au-heading">We are <span>Asterisc</span></h2>
         <p class="au-sub">A trusted digital engineering, web design &amp; mobile app development partner — ISO 9001:2015 certified.</p>
         <div class="au-cards">
-          <div class="au-card" onclick="showPage('about')">
+          <div class="au-card">
             <span class="au-tag">Company News</span>
             <h4>Asterisc Technocrat crosses 100+ projects delivered</h4>
             <span class="au-expand">Expand
@@ -734,106 +757,10 @@
       <div class="page-eyebrow">About Asterics</div>
       <h2 class="page-title">Who we are</h2>
       <p class="page-sub">Asterisc Technocrat Pvt. Ltd. — an ISO 9001:2015 internationally certified company and Central India's highest-rated tech firm on Google reviews.</p>
-
-      <div class="accordion">
-        <div class="accordion-item">
-          <button class="accordion-trigger" aria-expanded="false" onclick="toggleAcc(this)">
-            <div class="acc-left"><span class="acc-num">—</span><span class="acc-title">Our story</span></div>
-            <div class="acc-icon"><svg viewBox="0 0 12 12"><line x1="6" y1="1" x2="6" y2="11" stroke-width="1.6" stroke-linecap="round"/><line x1="1" y1="6" x2="11" y2="6" stroke-width="1.6" stroke-linecap="round"/></svg></div>
-          </button>
-          <div class="accordion-body"><div class="accordion-content">
-            We are a superb custom software development company in Nagpur delivering impressive business IT solutions and related services to customers across the world. Our development services are led by a dedicated and passionate team providing the best industry executions combined with the latest technology expertise and business domain knowledge to drive digital transformation.<br><br>
-            Our expertise in understanding business challenges and professional competence allows us to create a better experience for our customers. At Asterisc Technocrat, we care about our employees and our clients — they are the most important part of our company. We cultivate a strategic culture where every individual gets an equal opportunity for growth and great exposure.
-          </div></div>
-        </div>
-        <div class="accordion-item">
-          <button class="accordion-trigger" aria-expanded="false" onclick="toggleAcc(this)">
-            <div class="acc-left"><span class="acc-num">—</span><span class="acc-title">Our values</span></div>
-            <div class="acc-icon"><svg viewBox="0 0 12 12"><line x1="6" y1="1" x2="6" y2="11" stroke-width="1.6" stroke-linecap="round"/><line x1="1" y1="6" x2="11" y2="6" stroke-width="1.6" stroke-linecap="round"/></svg></div>
-          </button>
-          <div class="accordion-body"><div class="accordion-content">
-            <ul>
-              <li><strong>Award Winning</strong> — Industry recognition that boosts reputation and attracts customers and talent.</li>
-              <li><strong>Professional Staff</strong> — Our experts grow your business with professional assistance across every domain.</li>
-              <li><strong>24/7 Support</strong> — Our support and marketing strategies are available round the clock for your business.</li>
-              <li><strong>Fair Prices</strong> — Best-in-industry quality at prices designed to make great tech accessible.</li>
-            </ul>
-          </div></div>
-        </div>
-        <div class="accordion-item">
-          <button class="accordion-trigger" aria-expanded="false" onclick="toggleAcc(this)">
-            <div class="acc-left"><span class="acc-num">—</span><span class="acc-title">Certifications</span></div>
-            <div class="acc-icon"><svg viewBox="0 0 12 12"><line x1="6" y1="1" x2="6" y2="11" stroke-width="1.6" stroke-linecap="round"/><line x1="1" y1="6" x2="11" y2="6" stroke-width="1.6" stroke-linecap="round"/></svg></div>
-          </button>
-          <div class="accordion-body"><div class="accordion-content">
-            <ul>
-              <li>ISO 9001:2015 Internationally Certified</li>
-              <li>Central India's highest Google-rated tech company</li>
-              <li>Trusted by clients across New Zealand, India &amp; globally</li>
-            </ul>
-          </div></div>
-        </div>
-      </div>
-
-      <div class="section-sep"></div>
-      <div class="section-label">Leadership</div>
-      <div class="section-heading">Our founders</div>
-      <div class="team-grid">
-        <div class="team-card">
-          <div class="team-avatar">CB</div>
-          <h4>Chandrakant Bobade</h4>
-          <p>Founder &amp; CEO</p>
-        </div>
-        <div class="team-card">
-          <div class="team-avatar">SB</div>
-          <h4>Shrikant Bobade</h4>
-          <p>Director</p>
-        </div>
-        <div class="team-card">
-          <div class="team-avatar">PS</div>
-          <h4>Pooja Sao</h4>
-          <p>Manager / Instructor</p>
-        </div>
-      </div>
-
-      <div class="section-sep"></div>
-      <div class="section-label">Team Members</div>
-      <div class="section-heading">The people building it</div>
-      <div class="team-grid">
-        <div class="team-card"><div class="team-avatar">HK</div><h4>Haris Khan</h4><p>Web Developer</p></div>
-        <div class="team-card"><div class="team-avatar">RJ</div><h4>Ruchita Jibhkate</h4><p>Java Developer</p></div>
-        <div class="team-card"><div class="team-avatar">AS</div><h4>Aaditya Sohagpure</h4><p>Web Developer</p></div>
-        <div class="team-card"><div class="team-avatar">PH</div><h4>Priyanka Hatware</h4><p>Android Developer</p></div>
-        <div class="team-card"><div class="team-avatar">AD</div><h4>Aachal Dharme</h4><p>Web Developer</p></div>
-        <div class="team-card"><div class="team-avatar">TD</div><h4>Tushar Dhanvijay</h4><p>Digital Marketing</p></div>
-        <div class="team-card"><div class="team-avatar">VD</div><h4>Vinit Dhanvijay</h4><p>Business Associate</p></div>
-      </div>
-
-      <div class="section-sep"></div>
-      <div class="section-label">Testimonials</div>
-      <div class="section-heading">What our clients say</div>
-      <div class="testimonial-grid">
-        <div class="testimonial-card">
-          <p>"Asterisc Technocrat team has worked incredibly hard and taken ownership of the best quality product development and support. I would highly recommend them for any software project."</p>
-          <div class="testimonial-name">Nick Parkin</div>
-          <div class="testimonial-role">freshhomes.co.nz</div>
-        </div>
-        <div class="testimonial-card">
-          <p>"Great Development and supporting team. Great architect creativity skills, great ideas, best experience creating many different types of apps. I am very thankful to this company."</p>
-          <div class="testimonial-name">Mitch Horton</div>
-          <div class="testimonial-role">ppsgroup.co.nz</div>
-        </div>
-        <div class="testimonial-card">
-          <p>"Asterisc has an amazing team that works around the clock to deliver on all customer requests. From first contact to deployment it has been professional. They helped us build and fine-tune our platform."</p>
-          <div class="testimonial-name">Gaurav Rathi</div>
-          <div class="testimonial-role">heatfinder.co.nz</div>
-        </div>
-      </div>
-
     </div>
   </div>
 </div>
-
+ 
  <!-- CAREER -->
 <div id="page-career" class="page">
 
@@ -970,7 +897,7 @@
         <svg viewBox="0 0 20 20" width="18" height="18"><path d="M4 10h12M12 5l5 5-5 5" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
     </div>
-    <div class="asc-card" onclick="showPage('about')">
+    <div class="asc-card">
       <img src="13.jpg" alt="Meet our people" />
       <div class="asc-caption">
         <span>Meet our people</span>
@@ -1678,17 +1605,17 @@
           <h3 class="cc-form-heading">Send us a message</h3>
           <p class="cc-form-sub">Tell us a little about what you need — we'll take it from there.</p>
 
-          <div class="form-row">
-            <div class="form-group"><label>First name</label><input type="text" placeholder="Rahul" /></div>
-            <div class="form-group"><label>Last name</label><input type="text" placeholder="Sharma" /></div>
+                    <div class="form-row">
+            <div class="form-group"><label>First name</label><input type="text" id="cf-first-name" placeholder="name" /></div>
+            <div class="form-group"><label>Last name</label><input type="text" id="cf-last-name" placeholder="Surname" /></div>
           </div>
           <div class="form-row">
-            <div class="form-group"><label>Work email</label><input type="email" id="contact-email" placeholder="rahul@company.com" /></div>
-            <div class="form-group"><label>Phone</label><input type="tel" placeholder="+91 99999 00000" /></div>
+            <div class="form-group"><label>Work email</label><input type="email" id="contact-email" placeholder="xyz@email.com" /></div>
+            <div class="form-group"><label>Phone</label><input type="tel" id="cf-phone" placeholder="+91 99999 00000" /></div>
           </div>
           <div class="form-group">
             <label>Subject</label>
-            <select>
+            <select id="cf-subject">
               <option disabled selected>Select a topic</option>
               <option>Project inquiry</option>
               <option>Internship application</option>
@@ -1697,8 +1624,8 @@
               <option>General</option>
             </select>
           </div>
-          <div class="form-group"><label>Message</label><textarea placeholder="Tell us about your project or enquiry..."></textarea></div>
-          <button class="btn-submit cc-submit" onclick="handleSubmit()">
+          <div class="form-group"><label>Message</label><textarea id="cf-message" placeholder="Tell us about your project or enquiry..."></textarea></div>
+          <button class="btn-submit cc-submit" id="cf-submit-btn" onclick="handleSubmit()">
             Send message
             <svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </button>

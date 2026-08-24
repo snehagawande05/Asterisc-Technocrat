@@ -73,7 +73,7 @@ nav {
   min-width: 0;
 }
 .brand-mark {
-  width: 38px; height: 38px;
+  width: 52px; height: 52px;
   background: var(--brinjal);
   border-radius: 50%;
   display: flex; align-items: center; justify-content: center;
@@ -91,8 +91,8 @@ nav {
 }
 
 .brand-text { display: flex; flex-direction: column; line-height: 1.15; min-width: 0; }
- .brand-name { font-size: 18px; font-weight: 700; color: var(--black); letter-spacing: 0.4px; white-space: nowrap; overflow: visible; text-overflow: clip; max-width: none; }
-.brand-tagline { font-size: 9.5px; color: var(--gray-600); font-weight: 500; letter-spacing: 1.4px; text-transform: uppercase; white-space: nowrap; } 
+.brand-name { font-size: 21px; font-weight: 700; color: var(--black); letter-spacing: 0.4px; white-space: nowrap; overflow: visible; text-overflow: clip; max-width: none; }
+.brand-tagline { font-size: 11px; color: var(--gray-600); font-weight: 500; letter-spacing: 1.4px; text-transform: uppercase; white-space: nowrap; }
 
 .nav-center {
   flex: 1;
@@ -2152,6 +2152,63 @@ nav {
   border-bottom: 1px solid var(--gray-100);
   cursor: pointer;
 }
+.mobile-menu-group {
+  border-bottom: 1px solid var(--gray-100);
+}
+.mobile-menu-group summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: var(--font-serif);
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--black);
+  padding: 14px 0;
+  cursor: pointer;
+  list-style: none;
+}
+.mobile-menu-group summary::-webkit-details-marker { display: none; }
+.mobile-menu-group summary::after {
+  content: '';
+  width: 9px; height: 9px;
+  border-right: 2px solid var(--gray-400);
+  border-bottom: 2px solid var(--gray-400);
+  transform: rotate(45deg);
+  transition: transform 0.2s ease;
+  flex-shrink: 0;
+}
+.mobile-menu-group[open] summary::after { transform: rotate(-135deg); }
+.mobile-menu-group[open] summary { color: var(--brinjal); }
+
+.mobile-submenu {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 14px 12px;
+}
+.mobile-submenu-label {
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--gray-400);
+  margin: 10px 0 6px;
+}
+.mobile-submenu a,
+.mobile-submenu-fact {
+  font-family: var(--font-sans);
+  font-size: 14.5px;
+  font-weight: 500;
+  color: var(--gray-800);
+  padding: 8px 0;
+  cursor: pointer;
+}
+.mobile-submenu a:hover { color: var(--brinjal); }
+.mobile-submenu-fact { color: var(--gray-600); cursor: default; }
+.mobile-submenu-cta {
+  margin-top: 6px;
+  font-weight: 700;
+  color: var(--brinjal) !important;
+}
 .mobile-menu-panel a:hover { color: var(--brinjal); }
 .mobile-menu-auth { margin-top: 1.5rem; }
 .mobile-menu-auth .btn-auth { width: 100%; text-align: center; }
@@ -3486,60 +3543,55 @@ nav {
   cursor: default;
 }
 /* ============================================================
-   CONTACT — Floating split-card design
-   Add this to style.css. You can delete the old rules:
-   .contact-grid, .contact-info, .contact-detail, .cd-row, .cd-icon
-   (no longer used by the new markup — .form-group/.form-row/.btn-submit
-   are still reused, so keep those).
+   CONTACT CARD — split dark/light card like the reference design
+   Append this to style.css (don't remove the old .contact-grid
+   rules, they're just unused now since the HTML no longer has
+   .contact-grid / .contact-info / .contact-form-column markup)
    ============================================================ */
 
 .contact-card {
   display: grid;
   grid-template-columns: 0.85fr 1.15fr;
+  margin-top: 3rem;
   border-radius: 24px;
   overflow: hidden;
-  margin-top: 3rem;
-  box-shadow: 0 30px 70px rgba(20,10,25,0.16), 0 4px 14px rgba(20,10,25,0.06);
+  box-shadow: 0 30px 70px rgba(20,10,25,0.18);
   background: var(--white);
 }
 
-/* ---- Left panel ---- */
+/* ---- LEFT PANEL ---- */
 .contact-card-left {
   position: relative;
-  background: linear-gradient(150deg, #4a1655 0%, var(--brinjal) 55%, #862f93 120%);
-  padding: 3rem 2.75rem;
-  display: flex;
+  background: linear-gradient(150deg, #3d0d47 0%, var(--brinjal) 55%, #4a1655 100%);
+  padding: 3rem 2.5rem;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .cc-decor {
   position: absolute;
   border-radius: 50%;
   background: rgba(255,255,255,0.06);
-  pointer-events: none;
 }
 .cc-decor-1 { width: 220px; height: 220px; top: -70px; right: -70px; }
-.cc-decor-2 { width: 160px; height: 160px; bottom: -50px; left: -50px; background: rgba(255,255,255,0.05); }
+.cc-decor-2 { width: 160px; height: 160px; bottom: -60px; left: -40px; background: rgba(255,255,255,0.05); }
 
-.cc-left-inner {
-  position: relative;
-  z-index: 1;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
+.cc-left-inner { position: relative; z-index: 2; }
 
 .cc-left-heading {
   font-family: var(--font-serif);
   font-size: clamp(1.6rem, 2.6vw, 2rem);
   font-weight: 700;
   color: var(--white);
-  line-height: 1.2;
+  line-height: 1.25;
   margin-bottom: 1rem;
 }
+
 .cc-left-sub {
   font-size: 14px;
   color: rgba(255,255,255,0.75);
-  line-height: 1.7;
+  line-height: 1.65;
   margin-bottom: 2.25rem;
   max-width: 320px;
 }
@@ -3547,104 +3599,130 @@ nav {
 .cc-detail-list {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
-  margin-bottom: auto;
-  padding-bottom: 2.5rem;
+  gap: 1.4rem;
+  margin-bottom: 2.25rem;
 }
 .cc-detail-row {
   display: flex;
   align-items: flex-start;
-  gap: 14px;
+  gap: 0.9rem;
 }
 .cc-detail-icon {
-  width: 38px; height: 38px;
-  flex-shrink: 0;
+  width: 36px; height: 36px;
   border-radius: 50%;
-  background: rgba(255,255,255,0.12);
-  border: 1px solid rgba(255,255,255,0.2);
-  display: flex; align-items: center; justify-content: center;
+  border: 1.5px solid rgba(255,255,255,0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
 }
-.cc-detail-icon svg { width: 17px; height: 17px; stroke: #e0b8ea; fill: none; }
+.cc-detail-icon svg { width: 16px; height: 16px; stroke: var(--white); fill: none; }
 .cc-detail-label {
   display: block;
   font-size: 10.5px;
   font-weight: 700;
   letter-spacing: 1.2px;
   text-transform: uppercase;
-  color: #d9a8e8;
+  color: #e0b8ea;
   margin-bottom: 3px;
 }
 .cc-detail-value {
   display: block;
   font-size: 14px;
+  font-weight: 500;
   color: var(--white);
   line-height: 1.5;
-  font-weight: 500;
 }
 
-.cc-social { display: flex; gap: 10px; }
-.cc-social a {
-  width: 34px; height: 34px; border-radius: 50%;
-  border: 1px solid rgba(255,255,255,0.25);
-  display: flex; align-items: center; justify-content: center;
-  color: rgba(255,255,255,0.85); cursor: pointer;
-  transition: border-color 0.15s, color 0.15s, background 0.15s;
+.cc-social {
+  display: flex;
+  gap: 0.6rem;
 }
-.cc-social a:hover { border-color: var(--white); color: var(--white); background: rgba(255,255,255,0.12); }
+.cc-social a {
+  width: 34px; height: 34px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(255,255,255,0.3);
+  display: flex; align-items: center; justify-content: center;
+  color: rgba(255,255,255,0.85);
+  cursor: pointer;
+  transition: border-color 0.15s, background 0.15s, color 0.15s;
+}
+.cc-social a:hover { border-color: var(--white); background: rgba(255,255,255,0.12); color: var(--white); }
 .cc-social svg { width: 15px; height: 15px; stroke: currentColor; fill: none; }
 
-/* ---- Right panel (form) ---- */
+/* ---- RIGHT PANEL (form) ---- */
 .contact-card-right {
   padding: 3rem 2.75rem;
   display: flex;
   flex-direction: column;
+  gap: 1rem;
 }
 .cc-form-heading {
   font-family: var(--font-serif);
-  font-size: 1.4rem;
+  font-size: clamp(1.5rem, 2.6vw, 1.9rem);
   font-weight: 700;
   color: var(--black);
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.3rem;
 }
 .cc-form-sub {
-  font-size: 13.5px;
+  font-size: 14px;
   color: var(--gray-600);
-  margin-bottom: 1.75rem;
-}
-
-.contact-card-right .form-row { margin-bottom: 0.15rem; }
-.contact-card-right .form-group { margin-bottom: 1rem; }
-.contact-card-right .form-group input,
-.contact-card-right .form-group select,
-.contact-card-right .form-group textarea {
-  background: var(--gray-50);
-  border: 1.5px solid transparent;
-}
-.contact-card-right .form-group input:focus,
-.contact-card-right .form-group select:focus,
-.contact-card-right .form-group textarea:focus {
-  background: var(--white);
-  border-color: var(--brinjal);
+  margin-bottom: 0.75rem;
 }
 
 .cc-submit {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
-  border-radius: 999px;
-  margin-top: 0.5rem;
 }
-.cc-submit svg { width: 14px; height: 14px; stroke: var(--white); fill: none; transition: transform 0.15s; }
-.cc-submit:hover svg { transform: translateX(3px); }
+.cc-submit svg { width: 15px; height: 15px; stroke: var(--white); fill: none; }
 
-/* ---- Responsive ---- */
 @media (max-width: 900px) {
   .contact-card { grid-template-columns: 1fr; border-radius: 18px; }
-  .contact-card-left, .contact-card-right { padding: 2.25rem 1.75rem; }
-  .cc-detail-list { padding-bottom: 1.5rem; }
+  .contact-card-left { padding: 2.5rem 1.75rem; }
+  .contact-card-right { padding: 2.5rem 1.75rem; }
 }
-@media (max-width: 560px) {
-  .contact-card-left, .contact-card-right { padding: 2rem 1.25rem; }
-  .cc-left-heading { font-size: 1.5rem; }
+@media (max-width: 768px) {
+  .hero-wrapper {
+    min-height: 50svh;
+  }
+}
+@media (max-width: 768px) {
+  .brand-mark {
+    width: 46px;
+    height: 46px;
+  }
+}
+@media (max-width: 768px) {
+  .brand-mark {
+    width: 46px;
+    height: 46px;
+  }
+  .brand-name {
+    font-size: 15.5px;
+  }
+  .brand-tagline {
+    font-size: 8.5px;
+  }
+}
+@media (max-width: 768px) {
+  .brand-name {
+    font-size: 18px;
+  }
+}
+.brand-tagline {
+    font-size: 10px;
+  }
+}
+/* WHY-CARDS — stack title above text on mobile so spacing stays tight */
+@media (max-width: 640px) {
+  .why-section-home .why-card {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1.1rem 0;
+  }
+  .why-section-home .why-card h4 {
+    min-width: 0;
+  }
 }

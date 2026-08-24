@@ -165,10 +165,46 @@ function switchTab(type) {
   document.getElementById('tab-signup').classList.toggle('active', type === 'signup');
 }
 
+ const CONTACT_FORM_ENDPOINT = "https://script.google.com/macros/s/AKfycbw8yilq4TDueE5DqQmUqHBjj6_3bjFotymWn4SyIk4bHEgpeHLjP_BAQpKTRcYJlghm/exec";
+
 function handleSubmit() {
-  const email = document.getElementById('contact-email').value.trim();
-  if (!email) { alert('Please fill in your email address.'); return; }
-  alert("Thank you! We'll be in touch within one business day.");
+  const firstName = document.getElementById('cf-first-name').value.trim();
+  const lastName  = document.getElementById('cf-last-name').value.trim();
+  const email     = document.getElementById('contact-email').value.trim();
+  const phone     = document.getElementById('cf-phone').value.trim();
+  const subject   = document.getElementById('cf-subject').value;
+  const message   = document.getElementById('cf-message').value.trim();
+  const btn       = document.getElementById('cf-submit-btn');
+
+  if (!firstName || !email || !message) {
+    alert('Please fill in your name, email, and message.');
+    return;
+  }
+
+  btn.disabled = true;
+  const originalText = btn.innerHTML;
+  btn.innerHTML = 'Sending...';
+
+  fetch(CONTACT_FORM_ENDPOINT, {
+    method: 'POST',
+    body: JSON.stringify({ firstName, lastName, email, phone, subject, message }),
+    headers: { 'Content-Type': 'text/plain;charset=utf-8' }
+  })
+    .then(() => {
+      alert("Thank you! We've received your message and sent you a confirmation email.");
+      document.getElementById('cf-first-name').value = '';
+      document.getElementById('cf-last-name').value = '';
+      document.getElementById('contact-email').value = '';
+      document.getElementById('cf-phone').value = '';
+      document.getElementById('cf-message').value = '';
+    })
+    .catch(() => {
+      alert("Something went wrong. Please try again or email us directly at hello@asterisc.in.");
+    })
+    .finally(() => {
+      btn.disabled = false;
+      btn.innerHTML = originalText;
+    });
 }
 
 document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
