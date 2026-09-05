@@ -1876,12 +1876,12 @@ nav {
 .intern-stats-strip-wrap .intern-stat-num { font-size: 2rem; font-weight: 700; color: #fff; letter-spacing: -1px; }
 .intern-stats-strip-wrap .intern-stat-label { font-size: 12.5px; color: #d9a8e8; margin-top: 4px; }
 
-@media (max-width: 768px) {
-  .intern-stats-strip-wrap { margin-top: -40px; }
+ @media (max-width: 768px) {
+  .intern-stats-strip-wrap { margin-top: -40px; margin-bottom: -1.5rem; }
   .intern-stats-strip-wrap .intern-stats-strip { grid-template-columns: repeat(2, 1fr); gap: 12px; }
 }
 @media (max-width: 480px) {
-  .intern-stats-strip-wrap { margin-top: -30px; padding: 0 1rem; }
+  .intern-stats-strip-wrap { margin-top: -30px; padding: 0 1rem; margin-bottom: -1.5rem; }
   .intern-stats-strip-wrap .intern-stats-strip { gap: 10px; }
   .intern-stats-strip-wrap .intern-stat { padding: 1.25rem 0.5rem; }
   .intern-stats-strip-wrap .intern-stat-num { font-size: 1.7rem; }
@@ -3821,6 +3821,9 @@ nav {
   .why-section-home .why-card h4 {
     min-width: 120px;
   }
+  .why-section-home .why-card::before {
+    display: none;
+  }
 }
  @media (max-width: 640px) {
   .why-section-home .why-card {
@@ -3839,4 +3842,14 @@ nav {
     min-width: 0;
     margin-bottom: 2px;
   }
+}
+@media (max-width: 768px) {
+  .why-section-home .why-card::before {
+    display: none !important;
+  }
+}
+.intern-sub-mobile { display: none !important; } @media (max-width: 768px) { .intern-poster .intern-sub-desktop { display: none !important; } .intern-poster .intern-sub-mobile { display: block !important; } }
+@media (max-width: 768px) {
+  .intern-domains { margin-bottom: 0; }
+  .alumni-section { padding-top: 0.5rem; }
 }
