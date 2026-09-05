@@ -139,21 +139,21 @@
   <div class="mobile-menu-panel">
     <button class="mobile-menu-close" onclick="closeMobileMenu()">✕</button>
 
-    <details class="mobile-menu-group">
-      <summary>What We Do</summary>
-      <div class="mobile-submenu">
-        <span class="mobile-submenu-label">Services</span>
-        <a onclick="showPage('what-we-do'); closeMobileMenu();">Website Design</a>
-        <a onclick="showPage('what-we-do'); closeMobileMenu();">Mobile Application</a>
-        <a onclick="showPage('what-we-do'); closeMobileMenu();">E-Commerce</a>
-        <a onclick="showPage('what-we-do'); closeMobileMenu();">Software Development</a>
-        <span class="mobile-submenu-label">Solutions</span>
-        <a onclick="showPage('what-we-do'); closeMobileMenu();">Digital Marketing</a>
-        <a onclick="showPage('what-we-do'); closeMobileMenu();">Graphic Design</a>
-        <a onclick="showPage('what-we-do'); closeMobileMenu();">Branding &amp; Identity</a>
-        <a onclick="showPage('what-we-do'); closeMobileMenu();">Cloud &amp; Hosting</a>
-      </div>
-    </details>
+  <details class="mobile-menu-group">
+  <summary>What We Do</summary>
+  <div class="mobile-submenu">
+    <span class="mobile-submenu-label">Services</span>
+    <a onclick="return false;">Website Design</a>
+    <a onclick="return false;">Mobile Application</a>
+    <a onclick="return false;">E-Commerce</a>
+    <a onclick="return false;">Software Development</a>
+    <span class="mobile-submenu-label">Solutions</span>
+    <a onclick="return false;">Digital Marketing</a>
+    <a onclick="return false;">Graphic Design</a>
+    <a onclick="return false;">Branding &amp; Identity</a>
+    <a onclick="return false;">Cloud &amp; Hosting</a>
+  </div>
+</details>
 
     <a onclick="showPage('what-we-think'); closeMobileMenu();">What We Think</a>
 
@@ -215,11 +215,11 @@
             <input type="text" id="hero-ask-input" class="hero-search-input" placeholder="Ask me anything" onkeydown="if(event.key==='Enter'){handleHeroAsk();}" />
           </div>
 
-          <div class="hero-chips">
-            <button class="hero-chip" onclick="showPage('what-we-do')">Explore our services</button>
-            <button class="hero-chip" onclick="showPage('what-we-do')">Discover Digital Marketing</button>
-            <button class="hero-chip" onclick="showPage('about')">Why choose Asterisc</button>
-          </div>
+           <div class="hero-chips">
+  <button class="hero-chip" onclick="return false;">Explore our services</button>
+  <button class="hero-chip" onclick="return false;">Discover Digital Marketing</button>
+  <button class="hero-chip" onclick="return false;">Why choose Asterisc</button>
+</div>
 
           <div class="hero-search-footer">
             <span class="hero-ai-note">Content is generated with AI assistance</span>
@@ -830,12 +830,15 @@
       </div>
 
       <style>
-        .life-at-asterics-band{
-          background:var(--brinjal, #6e217d);
-          margin:48px calc(-1 * var(--page-container-px, 24px)) 0;
-          padding:48px 24px;
-          text-align:center;
-        }
+ .life-at-asterics-band{
+  background:var(--brinjal, #6e217d);
+  width:100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  margin-top:48px;
+  padding:48px 24px;
+  text-align:center;
+}
         .lta-dashes{display:flex;justify-content:center;gap:6px;margin-bottom:10px;}
         .lta-dashes span{width:2px;height:16px;background:rgba(255,255,255,.55);}
         .lta-heading{
